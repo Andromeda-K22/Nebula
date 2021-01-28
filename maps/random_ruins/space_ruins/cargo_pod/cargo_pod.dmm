@@ -1,0 +1,16 @@
+"a" = (/turf/template_noop,/area/template_noop)
+"b" = (/obj/effect/landmark/cargo_pod/painter,/turf/simulated/wall/titanium,/area/template_noop)
+"c" = (/obj/effect/landmark/cargo_pod/container_spawner,/obj/effect/landmark/cargo_pod/item_spawner,/turf/simulated/floor/airless,/area/template_noop)
+"d" = (/turf/simulated/floor/airless,/area/template_noop)
+"e" = (/obj/machinery/door/blast/shutters{icon_state = "shutter1"; dir = 4},/turf/simulated/floor/airless,/area/template_noop)
+"f" = (/obj/effect/landmark/cargo_pod_master,/turf/simulated/floor/airless,/area/template_noop)
+
+(1,1,1) = {"
+aabbbbbaa
+bbbcccbbb
+bccdddccb
+edddfddde
+bccdddccb
+bbbcccbbb
+aabbbbbaa
+"}
