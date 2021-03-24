@@ -201,7 +201,15 @@
 		. += 6
 	if(lying) //Crawling, it's slower
 		. += (8 + ((GET_STATUS(src, STAT_WEAK) * 3) + (GET_STATUS(src, STAT_CONFUSE) * 2)))
-	. += move_intent.move_delay + (ENCUMBERANCE_MOVEMENT_MOD * encumbrance())
+
+	var/decl/move_intent/move_intent_decl = move_intent
+	if(ispath(move_intent_decl))
+		move_intent_decl = GET_DECL(move_intent_decl)
+	if(istype(move_intent_decl))
+		. += move_intent_decl.move_delay
+
+	. += (ENCUMBERANCE_MOVEMENT_MOD * encumbrance())
+
 #undef ENCUMBERANCE_MOVEMENT_MOD
 
 /mob/proc/encumbrance()
