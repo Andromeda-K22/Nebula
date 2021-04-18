@@ -6,11 +6,12 @@
 	color = null
 	. = ..()
 
-// Hangar Deck
-/area/antares/hangar
-	name = "Hangar Deck - Atrium"
+//Cross-Deck, used for the atrium.
+/area/antares/crossdeck/atrium
+	name = "Cross-Deck - Atrium"
 	color = COLOR_SKY_BLUE
 
+// Hangar Deck
 /area/antares/hangar/fore_port
 	name = "Hangar Deck - Fore Port Hangar"
 	color = COLOR_GUNMETAL
@@ -64,10 +65,6 @@
 	color = COLOR_DARK_GREEN_GRAY
 
 // Operations Deck
-/area/antares/operations
-	name = "Ops Deck - Atrium"
-	color = COLOR_SKY_BLUE
-
 /area/antares/operations/telecomms
 	name = "Ops Deck - Telecommunications"
 	color = COLOR_LIME
@@ -140,6 +137,10 @@
 	name = "Ops Deck - Engineering Storage"
 	color = COLOR_PALE_YELLOW
 
+/area/antares/operations/engineering_monitoring
+	name = "Ops Deck - Engineering Monitoring"
+	color = COLOR_PALE_YELLOW
+
 /area/antares/operations/smes_storage
 	name = "Ops Deck - SMES Storage"
 	color = COLOR_WARM_YELLOW
@@ -169,10 +170,6 @@
 	color = COLOR_BLUE_GRAY
 
 // Habitation Deck
-/area/antares/habitation
-	name = "Hab Deck - Atrium"
-	color = COLOR_SKY_BLUE
-
 /area/antares/habitation/bar
 	name = "Hab Deck - Bar"
 	color = COLOR_GREEN
@@ -286,10 +283,6 @@
 	color = COLOR_STEEL
 
 // Command Deck
-/area/antares/command
-	name = "Command Deck - Atrium"
-	color = COLOR_SKY_BLUE
-
 /area/antares/command/bridge
 	name = "Command Deck - Bridge"
 	color = COLOR_NAVY_BLUE

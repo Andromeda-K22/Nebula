@@ -10,11 +10,11 @@
 /area/antares/hangar/fore_port_maintenance)
 "ad" = (
 /turf/simulated/wall,
-/area/antares/hangar)
+/area/antares/crossdeck/atrium)
 "ae" = (
 /obj/effect/wallframe_spawn/reinforced/hull,
 /turf/simulated/floor,
-/area/antares/hangar)
+/area/antares/crossdeck/atrium)
 "af" = (
 /turf/simulated/wall,
 /area/antares/hangar/fore_port)
@@ -23,22 +23,30 @@
 	icon_state = "comfychair";
 	dir = 4
 	},
+/obj/machinery/light/small{
+	icon_state = "bulb_map";
+	dir = 8
+	},
 /turf/simulated/floor/tiled,
-/area/antares/hangar)
+/area/antares/crossdeck/atrium)
 "ah" = (
 /obj/structure/table/standard,
 /turf/simulated/floor/tiled,
-/area/antares/hangar)
+/area/antares/crossdeck/atrium)
 "ai" = (
 /obj/structure/bed/chair/comfy/beige{
 	icon_state = "comfychair";
 	dir = 8
 	},
 /turf/simulated/floor/tiled,
-/area/antares/hangar)
+/area/antares/crossdeck/atrium)
 "aj" = (
+/obj/machinery/light{
+	icon_state = "tube_map";
+	dir = 1
+	},
 /turf/simulated/floor/tiled,
-/area/antares/hangar)
+/area/antares/crossdeck/atrium)
 "ak" = (
 /turf/simulated/wall,
 /area/antares/hangar/fore_starboard)
@@ -61,15 +69,12 @@
 /turf/simulated/floor,
 /area/antares/hangar/fore_port_maintenance)
 "aq" = (
-/obj/structure/cable/cyan{
-	icon_state = "0-4"
-	},
-/obj/machinery/power/apc{
-	icon_state = "apc0";
-	dir = 1
+/obj/structure/bed/chair/comfy/beige{
+	icon_state = "comfychair";
+	dir = 4
 	},
 /turf/simulated/floor/tiled,
-/area/antares/hangar)
+/area/antares/crossdeck/atrium)
 "ar" = (
 /turf/simulated/wall,
 /area/antares/hangar/fore_starboard_maintenance)
@@ -101,9 +106,16 @@
 /turf/simulated/floor,
 /area/antares/hangar/aft_maintenance)
 "aA" = (
-/obj/machinery/atmospherics/unary/vent_scrubber/on,
+/obj/structure/bed/chair/comfy/beige{
+	icon_state = "comfychair";
+	dir = 8
+	},
+/obj/machinery/light/small{
+	icon_state = "bulb_map";
+	dir = 4
+	},
 /turf/simulated/floor/tiled,
-/area/antares/hangar)
+/area/antares/crossdeck/atrium)
 "aB" = (
 /obj/machinery/door/airlock/maintenance,
 /turf/simulated/floor,
@@ -178,16 +190,21 @@
 /turf/simulated/floor/reinforced,
 /area/antares/hangar/fore_starboard)
 "aP" = (
-/turf/simulated/floor/grass,
-/area/antares/hangar)
-"aQ" = (
-/obj/machinery/portable_atmospherics/hydroponics/soil,
-/turf/simulated/floor/grass,
-/area/antares/hangar)
-"aR" = (
-/obj/structure/stairs/north,
 /turf/simulated/floor/tiled,
-/area/antares/hangar)
+/area/antares/crossdeck/atrium)
+"aQ" = (
+/obj/structure/cable/cyan{
+	icon_state = "0-4"
+	},
+/obj/machinery/power/apc{
+	icon_state = "apc0";
+	dir = 1
+	},
+/turf/simulated/floor/tiled,
+/area/antares/crossdeck/atrium)
+"aR" = (
+/turf/simulated/floor/grass,
+/area/antares/crossdeck/atrium)
 "aS" = (
 /turf/simulated/wall,
 /area/antares/hangar/aft_starboard)
@@ -227,9 +244,12 @@
 /turf/simulated/floor/tiled,
 /area/antares/hangar/aft_starboard)
 "ba" = (
-/obj/structure/ladder,
+/obj/machinery/light{
+	icon_state = "tube_map";
+	dir = 8
+	},
 /turf/simulated/floor/tiled,
-/area/antares/hangar)
+/area/antares/crossdeck/atrium)
 "bb" = (
 /obj/machinery/door/airlock/maintenance,
 /obj/structure/cable/cyan{
@@ -549,9 +569,9 @@
 /turf/simulated/floor/tiled,
 /area/antares/hangar/aft_port_hallway)
 "bU" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/tiled,
-/area/antares/hangar)
+/obj/machinery/portable_atmospherics/hydroponics/soil,
+/turf/simulated/floor/grass,
+/area/antares/crossdeck/atrium)
 "bV" = (
 /obj/structure/cable/cyan{
 	icon_state = "1-2"
@@ -586,13 +606,9 @@
 /turf/simulated/floor/tiled,
 /area/antares/hangar/fore_port_maintenance)
 "ca" = (
-/obj/machinery/door/airlock/autoname,
-/obj/structure/cable/cyan{
-	icon_state = "1-2"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/turf/simulated/floor/tiled,
-/area/antares/hangar)
+/obj/machinery/light,
+/turf/simulated/floor/grass,
+/area/antares/crossdeck/atrium)
 "cb" = (
 /obj/structure/cable/cyan{
 	icon_state = "0-8"
@@ -649,9 +665,12 @@
 /turf/simulated/floor,
 /area/antares/hangar/aft_maintenance)
 "ci" = (
-/obj/effect/wallframe_spawn,
+/obj/machinery/light{
+	icon_state = "tube_map";
+	dir = 4
+	},
 /turf/simulated/floor/tiled,
-/area/antares/hangar)
+/area/antares/crossdeck/atrium)
 "cj" = (
 /obj/structure/cable/cyan{
 	icon_state = "2-4"
@@ -692,9 +711,12 @@
 /turf/simulated/floor/tiled,
 /area/antares/hangar/fore_port)
 "co" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/alarm{
+	icon_state = "alarm0";
+	dir = 8
+	},
 /turf/simulated/floor/tiled,
-/area/antares/hangar)
+/area/antares/crossdeck/atrium)
 "cp" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	icon_state = "11-supply";
@@ -719,10 +741,12 @@
 /turf/simulated/floor/tiled,
 /area/antares/hangar/central_hallway)
 "cs" = (
-/obj/machinery/door/airlock/autoname,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
-/turf/simulated/floor/tiled,
-/area/antares/hangar)
+/obj/machinery/light{
+	icon_state = "tube_map";
+	dir = 1
+	},
+/turf/simulated/floor/grass,
+/area/antares/crossdeck/atrium)
 "ct" = (
 /obj/effect/wallframe_spawn/reinforced/hull,
 /turf/simulated/floor,
@@ -919,19 +943,13 @@
 /turf/simulated/floor/tiled,
 /area/antares/hangar/aft_starboard_hallway)
 "cV" = (
-/obj/machinery/light{
-	icon_state = "tube_map";
-	dir = 8
-	},
+/obj/structure/stairs/north,
 /turf/simulated/floor/tiled,
-/area/antares/hangar)
+/area/antares/crossdeck/atrium)
 "cW" = (
-/obj/machinery/light{
-	icon_state = "tube_map";
-	dir = 4
-	},
+/obj/machinery/atmospherics/unary/vent_scrubber/on,
 /turf/simulated/floor/tiled,
-/area/antares/hangar)
+/area/antares/crossdeck/atrium)
 "cX" = (
 /obj/machinery/light{
 	icon_state = "tube_map";
@@ -962,9 +980,9 @@
 /turf/simulated/floor/tiled,
 /area/antares/hangar/fore_starboard)
 "db" = (
-/obj/machinery/light,
+/obj/structure/ladder,
 /turf/simulated/floor/tiled,
-/area/antares/hangar)
+/area/antares/crossdeck/atrium)
 "dc" = (
 /obj/machinery/light,
 /turf/simulated/floor/tiled,
@@ -1052,45 +1070,25 @@
 /turf/simulated/floor/shuttle/blue,
 /area/shuttle/escape)
 "dq" = (
-/obj/structure/bed/chair/comfy/beige{
-	icon_state = "comfychair";
-	dir = 4
-	},
-/obj/machinery/light/small{
-	icon_state = "bulb_map";
-	dir = 8
-	},
+/obj/machinery/atmospherics/unary/vent_pump/on,
 /turf/simulated/floor/tiled,
-/area/antares/hangar)
+/area/antares/crossdeck/atrium)
 "dr" = (
-/obj/machinery/light{
-	icon_state = "tube_map";
-	dir = 1
-	},
-/turf/simulated/floor/tiled,
-/area/antares/hangar)
-"ds" = (
-/obj/structure/bed/chair/comfy/beige{
-	icon_state = "comfychair";
-	dir = 8
-	},
-/obj/machinery/light/small{
-	icon_state = "bulb_map";
-	dir = 4
-	},
-/turf/simulated/floor/tiled,
-/area/antares/hangar)
-"dt" = (
 /obj/machinery/light,
-/turf/simulated/floor/grass,
-/area/antares/hangar)
+/turf/simulated/floor/tiled,
+/area/antares/crossdeck/atrium)
+"ds" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/tiled,
+/area/antares/crossdeck/atrium)
+"dt" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/turf/simulated/floor/tiled,
+/area/antares/crossdeck/atrium)
 "du" = (
-/obj/machinery/light{
-	icon_state = "tube_map";
-	dir = 1
-	},
-/turf/simulated/floor/grass,
-/area/antares/hangar)
+/obj/effect/wallframe_spawn,
+/turf/simulated/floor/tiled,
+/area/antares/crossdeck/atrium)
 "dv" = (
 /obj/structure/cable/cyan{
 	icon_state = "0-4"
@@ -1844,9 +1842,10 @@
 /turf/simulated/floor/tiled,
 /area/antares/hangar/fore_starboard)
 "eU" = (
-/obj/machinery/atmospherics/unary/vent_pump/on,
+/obj/machinery/door/airlock/autoname,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled,
-/area/antares/hangar)
+/area/antares/crossdeck/atrium)
 "eV" = (
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	icon_state = "map_vent_out";
@@ -1870,12 +1869,13 @@
 /turf/simulated/floor/tiled,
 /area/antares/hangar/fore_starboard_hallway)
 "eY" = (
-/obj/machinery/alarm{
-	icon_state = "alarm0";
-	dir = 8
+/obj/machinery/door/airlock/autoname,
+/obj/structure/cable/cyan{
+	icon_state = "1-2"
 	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/tiled,
-/area/antares/hangar)
+/area/antares/crossdeck/atrium)
 "eZ" = (
 /obj/machinery/alarm{
 	icon_state = "alarm0";
@@ -14202,16 +14202,16 @@ aa
 aa
 ad
 ad
-aj
-aj
-aj
-cV
-aj
-aj
+aP
+aP
+aP
+ba
+aP
+aP
 ad
-aR
-aj
-aj
+cV
+aP
+aP
 ad
 ff
 bl
@@ -14363,18 +14363,18 @@ aa
 aa
 aa
 ae
-dq
-aj
-aj
-aj
-aj
-aj
-aj
-aj
-aj
-aj
-aj
-ci
+ag
+aP
+aP
+aP
+aP
+aP
+aP
+aP
+aP
+aP
+aP
+du
 cJ
 bl
 aw
@@ -14526,16 +14526,16 @@ aa
 aa
 ae
 ah
-aj
-aj
 aP
 aP
+aR
+aR
+aR
+aR
+aR
 aP
 aP
-aP
-aj
-aj
-db
+dr
 ad
 eI
 eK
@@ -14688,17 +14688,17 @@ aa
 aa
 ae
 ai
-aj
-aj
 aP
-aQ
 aP
-aQ
+aR
+bU
+aR
+bU
+aR
 aP
-aj
-aA
-co
-cs
+cW
+ds
+eU
 dC
 bl
 aw
@@ -14849,18 +14849,18 @@ aa
 aa
 aa
 ad
-dr
-aj
 aj
 aP
-dt
+aP
+aR
+ca
 ad
-du
+cs
+aR
 aP
-aj
-ba
-aj
-ci
+db
+aP
+du
 cq
 bl
 aB
@@ -15011,18 +15011,18 @@ aa
 aa
 aa
 ae
-ag
-aj
-aj
+aq
 aP
-aQ
 aP
-aQ
-aP
-aj
-eU
+aR
 bU
-ca
+aR
+bU
+aR
+aP
+dq
+dt
+eY
 cr
 bl
 aw
@@ -15174,16 +15174,16 @@ aa
 aa
 ae
 ah
-aj
-aj
 aP
 aP
+aR
+aR
+aR
+aR
+aR
 aP
 aP
-aP
-aj
-aj
-db
+dr
 ad
 eJ
 eW
@@ -15335,18 +15335,18 @@ aa
 aa
 aa
 ae
-ds
-aj
-aj
-aj
-aj
-aj
-aj
-aj
-aj
-aj
-aj
-ci
+aA
+aP
+aP
+aP
+aP
+aP
+aP
+aP
+aP
+aP
+aP
+du
 cw
 bl
 aw
@@ -15498,16 +15498,16 @@ aa
 aa
 ad
 ad
-aq
-aj
-aj
-cW
-eY
-aj
+aQ
+aP
+aP
+ci
+co
+aP
 ad
-aR
-aj
-aj
+cV
+aP
+aP
 ad
 cw
 bl

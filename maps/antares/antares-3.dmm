@@ -9,9 +9,8 @@
 /turf/simulated/floor/tiled,
 /area/antares/habitation/central_hallway)
 "ad" = (
-/obj/machinery/door/airlock/autoname,
-/turf/simulated/floor/tiled,
-/area/antares/habitation/fore_hallway)
+/turf/simulated/wall,
+/area/antares/crossdeck/atrium)
 "ae" = (
 /obj/structure/cable/cyan{
 	icon_state = "0-2"
@@ -24,20 +23,18 @@
 /area/antares/habitation/bar_storage)
 "af" = (
 /obj/effect/wallframe_spawn/reinforced/hull,
+/obj/machinery/door/firedoor,
 /turf/simulated/floor,
-/area/antares/habitation/port_hallway)
+/area/antares/habitation/cafe_maintenance)
 "ag" = (
 /turf/unsimulated/mask,
 /area/turbolift/antares/third)
 "ah" = (
 /obj/structure/cable/cyan{
-	icon_state = "4-8"
-	},
-/obj/structure/cable/cyan{
-	icon_state = "1-4"
+	icon_state = "2-4"
 	},
 /turf/simulated/floor/tiled,
-/area/antares/habitation/central_hallway)
+/area/antares/habitation/fore_port_hallway)
 "ai" = (
 /turf/simulated/wall,
 /area/antares/habitation/medbay)
@@ -45,18 +42,35 @@
 /obj/structure/cable/cyan{
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled,
-/area/antares/habitation/central_hallway)
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "11-supply";
+	dir = 5
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	icon_state = "11-scrubbers";
+	dir = 8
+	},
+/turf/simulated/floor/wood/walnut,
+/area/antares/habitation/library_storage)
 "ak" = (
 /turf/simulated/floor/tiled,
 /area/antares/habitation/fore_hallway)
 "al" = (
+/obj/machinery/door/airlock/maintenance,
 /obj/structure/cable/cyan{
-	icon_state = "1-4"
+	icon_state = "4-8"
 	},
-/obj/structure/bed/chair/wood/wings/mahogany,
-/turf/simulated/floor/wood/walnut,
-/area/antares/habitation/bar)
+/obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "11-supply";
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	icon_state = "11-scrubbers";
+	dir = 8
+	},
+/turf/simulated/floor,
+/area/antares/habitation/library_storage)
 "am" = (
 /turf/simulated/floor/tiled/white,
 /area/space)
@@ -68,13 +82,18 @@
 /area/antares/habitation/bar_storage)
 "ap" = (
 /obj/structure/cable/cyan{
-	icon_state = "1-2"
+	icon_state = "4-8"
 	},
-/obj/structure/cable/cyan{
-	icon_state = "2-4"
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "11-supply";
+	dir = 10
 	},
-/turf/simulated/floor/tiled/white,
-/area/antares/habitation/kitchen)
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	icon_state = "11-scrubbers";
+	dir = 10
+	},
+/turf/simulated/floor/wood/walnut,
+/area/antares/habitation/cafe)
 "aq" = (
 /obj/structure/table/standard,
 /turf/simulated/floor/tiled/white,
@@ -83,42 +102,64 @@
 /turf/simulated/floor/tiled/white,
 /area/antares/habitation/medbay)
 "as" = (
-/obj/machinery/door/airlock/autoname,
+/obj/machinery/power/apc{
+	icon_state = "apc0";
+	dir = 1
+	},
+/obj/machinery/light{
+	icon_state = "tube_map";
+	dir = 1
+	},
+/obj/structure/cable/cyan{
+	icon_state = "0-2"
+	},
 /turf/simulated/floor/tiled,
-/area/antares/habitation/fore_starboard_hallway)
+/area/antares/habitation/hydroponics)
 "at" = (
-/turf/simulated/wall,
-/area/antares/habitation)
+/obj/effect/wallframe_spawn/reinforced/hull,
+/obj/machinery/door/firedoor,
+/turf/simulated/floor,
+/area/antares/crossdeck/atrium)
 "au" = (
 /obj/effect/wallframe_spawn/reinforced/hull,
+/obj/machinery/door/firedoor,
 /turf/simulated/floor,
-/area/antares/habitation/medbay)
+/area/antares/habitation/speakeasy)
 "av" = (
-/obj/effect/wallframe_spawn/reinforced/hull,
+/obj/machinery/door/airlock/maintenance,
+/obj/structure/cable/cyan{
+	icon_state = "4-8"
+	},
+/obj/machinery/door/firedoor,
 /turf/simulated/floor,
-/area/antares/habitation)
+/area/antares/habitation/speakeasy)
 "aw" = (
 /turf/simulated/wall,
 /area/antares/habitation/speakeasy)
 "ax" = (
-/obj/effect/wallframe_spawn,
-/turf/simulated/floor/tiled,
-/area/antares/habitation/fore_starboard_hallway)
+/obj/structure/table/woodentable_reinforced/mahogany,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/wood/walnut,
+/area/antares/habitation/cafe)
 "ay" = (
-/obj/machinery/door/airlock/autoname,
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
+/obj/effect/wallframe_spawn,
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled,
-/area/antares/habitation/aft_port_hallway)
+/area/antares/habitation/kitchen)
 "az" = (
 /obj/effect/wallframe_spawn,
+/obj/structure/cable/cyan{
+	icon_state = "1-2"
+	},
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled,
-/area/antares/habitation/aft_port_hallway)
+/area/antares/habitation/kitchen)
 "aA" = (
-/obj/machinery/door/airlock/autoname,
-/turf/simulated/floor/tiled,
-/area/antares/habitation/aft_port_hallway)
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/wood/walnut,
+/area/antares/habitation/cafe)
 "aB" = (
 /obj/machinery/smartfridge,
 /turf/simulated/floor/tiled,
@@ -134,9 +175,10 @@
 /turf/simulated/floor/tiled,
 /area/antares/habitation/port_hallway)
 "aE" = (
-/obj/structure/table/standard,
-/turf/simulated/floor/tiled/white,
-/area/space)
+/obj/effect/wallframe_spawn,
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/tiled,
+/area/antares/habitation/fore_starboard_hallway)
 "aF" = (
 /turf/simulated/wall,
 /area/antares/habitation/technical_storage)
@@ -161,16 +203,16 @@
 "aL" = (
 /obj/machinery/door/airlock/maintenance,
 /obj/structure/cable/cyan{
-	icon_state = "1-2"
+	icon_state = "4-8"
 	},
+/obj/machinery/door/firedoor,
 /turf/simulated/floor,
-/area/antares/habitation/medbay)
+/area/antares/habitation/library_storage)
 "aM" = (
-/obj/structure/cable/cyan{
-	icon_state = "2-4"
-	},
-/turf/simulated/floor/tiled,
-/area/antares/habitation/hydroponics)
+/obj/machinery/door/airlock/maintenance,
+/obj/machinery/door/firedoor,
+/turf/simulated/floor,
+/area/antares/habitation/speakeasy)
 "aN" = (
 /obj/structure/cable/cyan{
 	icon_state = "1-2"
@@ -178,9 +220,20 @@
 /turf/simulated/floor/wood/walnut,
 /area/antares/habitation/bar_storage)
 "aO" = (
-/obj/machinery/door/airlock/autoname,
-/turf/simulated/floor/tiled/white,
-/area/antares/habitation/medbay)
+/obj/structure/railing/mapped{
+	icon_state = "railing0-1";
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "11-supply";
+	dir = 6
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	icon_state = "11-scrubbers";
+	dir = 10
+	},
+/turf/simulated/floor/tiled,
+/area/antares/crossdeck/atrium)
 "aP" = (
 /turf/simulated/floor/tiled,
 /area/antares/habitation/aft_port_hallway)
@@ -190,7 +243,7 @@
 	dir = 4
 	},
 /turf/simulated/floor/tiled,
-/area/antares/habitation)
+/area/antares/crossdeck/atrium)
 "aR" = (
 /obj/structure/bed/chair/comfy/beige{
 	icon_state = "comfychair";
@@ -202,34 +255,36 @@
 /turf/simulated/floor/tiled,
 /area/antares/habitation/port_hallway)
 "aT" = (
-/obj/machinery/door/airlock/maintenance,
-/obj/structure/cable/cyan{
-	icon_state = "1-2"
+/obj/structure/railing/mapped{
+	icon_state = "railing0-1";
+	dir = 1
 	},
-/turf/simulated/floor,
-/area/antares/habitation/bar_storage)
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	icon_state = "map_scrubber_on";
+	dir = 4
+	},
+/turf/simulated/floor/tiled,
+/area/antares/crossdeck/atrium)
 "aU" = (
 /turf/simulated/floor/wood/walnut,
 /area/antares/habitation/bar)
 "aV" = (
-/obj/structure/cable/cyan{
-	icon_state = "1-2"
-	},
-/obj/structure/cable/cyan{
-	icon_state = "2-4"
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	icon_state = "11-scrubbers";
+	dir = 8
 	},
 /turf/simulated/floor/wood/walnut,
-/area/antares/habitation/bar)
+/area/antares/habitation/cafe)
 "aW" = (
-/obj/structure/cable/cyan{
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/tiled/white,
-/area/antares/habitation/kitchen)
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/tiled,
+/area/antares/crossdeck/atrium)
 "aX" = (
-/obj/effect/wallframe_spawn/reinforced/hull,
+/obj/machinery/door/airlock/maintenance,
+/obj/machinery/door/firedoor,
 /turf/simulated/floor,
-/area/antares/habitation/speakeasy)
+/area/antares/habitation/cafe_maintenance)
 "aY" = (
 /turf/simulated/floor,
 /area/antares/habitation/speakeasy)
@@ -249,24 +304,31 @@
 /turf/simulated/floor,
 /area/antares/habitation/speakeasy)
 "bd" = (
-/obj/machinery/door/airlock/autoname,
+/obj/structure/cable/cyan{
+	icon_state = "4-8"
+	},
 /turf/simulated/floor/tiled,
-/area/antares/habitation/aft_starboard_hallway)
+/area/antares/habitation/fore_hallway)
 "be" = (
-/obj/effect/wallframe_spawn,
+/obj/machinery/door/airlock/autoname,
+/obj/structure/cable/cyan{
+	icon_state = "1-2"
+	},
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled,
-/area/antares/habitation/aft_starboard_hallway)
+/area/antares/habitation/fore_starboard_hallway)
 "bf" = (
 /obj/structure/table/standard,
 /turf/simulated/floor/tiled,
-/area/antares/habitation)
+/area/antares/crossdeck/atrium)
 "bg" = (
-/obj/machinery/door/airlock/autoname,
+/obj/machinery/door/airlock/maintenance,
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled,
-/area/antares/habitation/aft_starboard_hallway)
+/obj/machinery/door/firedoor,
+/turf/simulated/floor,
+/area/antares/habitation/medbay_maintenance)
 "bh" = (
 /turf/simulated/floor/tiled,
 /area/antares/habitation/aft_starboard_hallway)
@@ -276,7 +338,7 @@
 	dir = 8
 	},
 /turf/simulated/floor/tiled,
-/area/antares/habitation)
+/area/antares/crossdeck/atrium)
 "bj" = (
 /obj/machinery/door/airlock/maintenance,
 /obj/structure/cable{
@@ -299,9 +361,10 @@
 /turf/simulated/floor,
 /area/antares/habitation/medbay)
 "bo" = (
-/obj/effect/wallframe_spawn,
+/obj/structure/table/standard,
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/white,
-/area/antares/habitation/medbay)
+/area/space)
 "bp" = (
 /obj/structure/railing/mapped{
 	icon_state = "railing0-1";
@@ -355,48 +418,57 @@
 /turf/simulated/wall,
 /area/antares/habitation/logistics)
 "by" = (
-/obj/structure/cable/cyan{
-	icon_state = "1-4"
+/obj/structure/railing/mapped{
+	icon_state = "railing0-1";
+	dir = 1
 	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "11-supply";
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/antares/crossdeck/atrium)
+"bz" = (
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	icon_state = "map-scrubbers";
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/turf/simulated/floor/wood/walnut,
+/area/antares/habitation/cafe)
+"bA" = (
 /obj/structure/cable/cyan{
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled/white,
-/area/antares/habitation/medbay)
-"bz" = (
-/obj/structure/cable/cyan{
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/tiled/white,
-/area/antares/habitation/medbay)
-"bA" = (
-/obj/machinery/door/airlock/autoname,
-/obj/structure/cable/cyan{
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/tiled/white,
-/area/antares/habitation/medbay)
+/turf/simulated/floor/tiled,
+/area/antares/habitation/fore_port_hallway)
 "bB" = (
-/obj/structure/cable/cyan{
-	icon_state = "2-8"
+/obj/machinery/light/small{
+	icon_state = "bulb_map";
+	dir = 1
 	},
-/turf/simulated/floor/tiled/white,
-/area/antares/habitation/medbay)
+/obj/machinery/atmospherics/unary/vent_pump/on,
+/turf/simulated/floor/wood/walnut,
+/area/antares/habitation/library_storage)
 "bC" = (
 /obj/machinery/door/airlock/maintenance,
 /turf/simulated/floor,
 /area/antares/habitation/medbay_maintenance)
 "bD" = (
-/obj/machinery/door/airlock/autoname,
+/obj/machinery/light{
+	icon_state = "tube_map";
+	dir = 1
+	},
 /turf/simulated/floor/tiled,
-/area/antares/habitation/port_hallway)
+/area/antares/crossdeck/atrium)
 "bE" = (
 /turf/simulated/wall,
 /area/antares/habitation/bar)
 "bF" = (
-/obj/effect/wallframe_spawn,
-/turf/simulated/floor,
-/area/antares/habitation/logistics)
+/obj/machinery/door/airlock/autoname,
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/tiled,
+/area/antares/habitation/fore_port_hallway)
 "bG" = (
 /turf/simulated/wall,
 /area/antares/habitation/kitchen)
@@ -404,51 +476,58 @@
 /turf/simulated/open,
 /area/antares/habitation/aft_port_hallway)
 "bI" = (
-/obj/machinery/door/airlock/autoname,
-/obj/structure/cable{
-	icon_state = "4-8"
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	icon_state = "map_scrubber_on";
+	dir = 4
 	},
 /turf/simulated/floor/tiled,
-/area/antares/habitation/central_hallway)
+/area/antares/habitation/hydroponics)
 "bJ" = (
 /turf/simulated/wall,
 /area/antares/habitation/logistics_foyer)
 "bK" = (
-/obj/structure/cable{
-	icon_state = "4-8"
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	icon_state = "11-scrubbers";
+	dir = 10
 	},
 /turf/simulated/floor/tiled,
-/area/antares/habitation/central_hallway)
+/area/antares/habitation/hydroponics)
 "bL" = (
 /obj/machinery/door/airlock/autoname,
+/obj/structure/cable/cyan{
+	icon_state = "1-2"
+	},
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled,
-/area/antares/habitation/logistics_foyer)
+/area/antares/habitation/fore_port_hallway)
 "bM" = (
 /turf/simulated/wall,
 /area/antares/habitation/library_storage)
 "bN" = (
-/obj/machinery/door/airlock/maintenance,
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/turf/simulated/floor,
-/area/antares/habitation/medbay_maintenance)
-"bO" = (
-/obj/machinery/door/airlock/autoname,
-/obj/structure/cable/cyan{
-	icon_state = "1-2"
-	},
+/obj/structure/table/standard,
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled/white,
 /area/antares/habitation/medbay)
+"bO" = (
+/obj/machinery/light{
+	icon_state = "tube_map";
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/antares/crossdeck/atrium)
 "bP" = (
 /turf/simulated/wall,
 /area/antares/habitation/mess_hall)
 "bQ" = (
-/obj/structure/cable/cyan{
-	icon_state = "1-4"
+/obj/machinery/power/apc{
+	icon_state = "apc0";
+	dir = 1
 	},
-/turf/simulated/floor/tiled/white,
-/area/antares/habitation/medbay)
+/obj/structure/cable{
+	icon_state = "0-4"
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/fore_starboard_hallway)
 "bR" = (
 /obj/structure/cable{
 	icon_state = "0-2"
@@ -470,18 +549,16 @@
 /turf/simulated/floor,
 /area/antares/habitation/speakeasy)
 "bT" = (
-/obj/machinery/door/airlock/maintenance,
-/obj/structure/cable/cyan{
-	icon_state = "1-2"
-	},
+/obj/effect/wallframe_spawn/reinforced/hull,
+/obj/machinery/door/firedoor,
 /turf/simulated/floor,
-/area/antares/habitation/technical_storage)
+/area/antares/habitation/medbay)
 "bU" = (
-/obj/structure/cable/cyan{
+/obj/structure/cable{
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled,
-/area/antares/habitation/hydroponics)
+/area/antares/habitation/fore_starboard_hallway)
 "bV" = (
 /obj/structure/bed/chair/comfy/beige{
 	icon_state = "comfychair";
@@ -516,11 +593,12 @@
 /turf/simulated/floor/tiled/white,
 /area/antares/habitation/kitchen)
 "ca" = (
-/obj/structure/cable/cyan{
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/tiled/white,
-/area/space)
+/obj/machinery/door/airlock/autoname,
+/obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/tiled,
+/area/antares/crossdeck/atrium)
 "cb" = (
 /obj/structure/cable/cyan{
 	icon_state = "4-8"
@@ -528,9 +606,13 @@
 /turf/simulated/floor/tiled/white,
 /area/antares/habitation/mess_hall)
 "cc" = (
-/obj/effect/wallframe_spawn,
+/obj/machinery/door/airlock/autoname,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled,
-/area/antares/habitation/kitchen)
+/area/antares/habitation/fore_hallway)
 "cd" = (
 /obj/structure/cable/cyan{
 	icon_state = "1-2"
@@ -562,18 +644,16 @@
 /turf/simulated/floor/tiled/white,
 /area/antares/habitation/mess_hall)
 "cj" = (
-/obj/machinery/door/airlock/autoname,
-/obj/structure/cable/cyan{
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/tiled,
-/area/antares/habitation/logistics_foyer)
+/obj/effect/wallframe_spawn,
+/obj/machinery/door/firedoor,
+/turf/simulated/floor,
+/area/antares/habitation/mess_hall)
 "ck" = (
 /obj/structure/cable/cyan{
-	icon_state = "1-2"
+	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled,
-/area/antares/habitation/hydroponics)
+/area/antares/habitation/fore_port_hallway)
 "cl" = (
 /obj/structure/cable/cyan{
 	icon_state = "1-2"
@@ -586,8 +666,9 @@
 /area/antares/habitation/bar)
 "cn" = (
 /obj/effect/wallframe_spawn,
+/obj/machinery/door/firedoor,
 /turf/simulated/floor,
-/area/antares/habitation/central_hallway)
+/area/antares/habitation/bar)
 "co" = (
 /turf/simulated/wall,
 /area/antares/habitation/central_hallway)
@@ -610,29 +691,23 @@
 /turf/simulated/floor/tiled/white,
 /area/antares/habitation/mess_hall)
 "cs" = (
-/obj/machinery/door/airlock/maintenance,
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/obj/structure/cable/cyan{
-	icon_state = "1-2"
-	},
-/turf/simulated/floor,
-/area/antares/habitation/medbay)
-"ct" = (
-/obj/structure/table/standard,
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/turf/simulated/floor/tiled/white,
-/area/antares/habitation/medbay)
-"cu" = (
 /obj/machinery/door/airlock/autoname,
-/obj/structure/cable{
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/tiled,
+/area/antares/habitation/fore_hallway)
+"ct" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "11-supply";
+	dir = 4
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/hydroponics)
+"cu" = (
+/obj/structure/cable/cyan{
 	icon_state = "4-8"
 	},
-/turf/simulated/floor/tiled/white,
-/area/antares/habitation/medbay)
+/turf/simulated/floor/tiled,
+/area/antares/habitation/hydroponics)
 "cv" = (
 /obj/machinery/door/airlock/autoname,
 /turf/simulated/floor/tiled,
@@ -651,18 +726,27 @@
 /turf/simulated/floor/tiled,
 /area/antares/habitation/aft_port_hallway)
 "cz" = (
-/obj/effect/wallframe_spawn/reinforced/hull,
+/obj/effect/wallframe_spawn,
+/obj/machinery/door/firedoor,
 /turf/simulated/floor,
-/area/antares/habitation/central_hallway)
+/area/antares/habitation/logistics)
 "cA" = (
+/obj/structure/railing/mapped{
+	icon_state = "railing0-1";
+	dir = 1
+	},
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	icon_state = "map_vent_out";
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/antares/crossdeck/atrium)
+"cB" = (
+/obj/machinery/door/airlock/autoname,
 /obj/structure/cable/cyan{
 	icon_state = "4-8"
 	},
-/obj/structure/bed/chair/wood/wings/mahogany,
-/turf/simulated/floor/wood/walnut,
-/area/antares/habitation/mess_hall)
-"cB" = (
-/obj/effect/wallframe_spawn,
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled,
 /area/antares/habitation/fore_hallway)
 "cC" = (
@@ -673,9 +757,15 @@
 /turf/simulated/floor/tiled/white,
 /area/antares/habitation/medbay)
 "cE" = (
-/obj/structure/ladder,
-/turf/simulated/floor/tiled/white,
-/area/antares/habitation/medbay)
+/obj/structure/cable/cyan{
+	icon_state = "1-4"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "11-supply";
+	dir = 4
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/hydroponics)
 "cF" = (
 /obj/structure/cable/cyan{
 	icon_state = "1-2"
@@ -687,23 +777,29 @@
 /area/antares/habitation/medbay)
 "cG" = (
 /obj/structure/cable/cyan{
-	icon_state = "0-4"
+	icon_state = "4-8"
 	},
-/obj/machinery/power/apc,
-/turf/simulated/floor/tiled/white,
-/area/antares/habitation/medbay)
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "11-supply";
+	dir = 4
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/hydroponics)
 "cH" = (
 /turf/simulated/floor,
 /area/antares/habitation/starboard_thrusters)
 "cI" = (
-/obj/structure/cable/cyan{
+/obj/structure/cable{
 	icon_state = "1-2"
 	},
-/turf/simulated/floor,
-/area/antares/habitation/starboard_thrusters)
+/obj/structure/cable/cyan{
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/fore_port_hallway)
 "cJ" = (
 /turf/simulated/floor/tiled,
-/area/antares/habitation)
+/area/antares/crossdeck/atrium)
 "cK" = (
 /obj/structure/cable{
 	icon_state = "2-4"
@@ -718,7 +814,11 @@
 /turf/simulated/wall,
 /area/antares/habitation/cafe_maintenance)
 "cN" = (
-/obj/effect/wallframe_spawn/reinforced/hull,
+/obj/machinery/door/airlock/maintenance,
+/obj/structure/cable/cyan{
+	icon_state = "1-2"
+	},
+/obj/machinery/door/firedoor,
 /turf/simulated/floor,
 /area/antares/habitation/cafe_maintenance)
 "cO" = (
@@ -728,11 +828,15 @@
 /turf/simulated/floor,
 /area/antares/habitation/storage_maintenance)
 "cP" = (
-/obj/structure/cable{
-	icon_state = "2-4"
+/obj/structure/cable/cyan{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "11-supply";
+	dir = 9
 	},
 /turf/simulated/floor/tiled,
-/area/antares/habitation/fore_port_hallway)
+/area/antares/habitation/hydroponics)
 "cQ" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -740,34 +844,45 @@
 /turf/simulated/floor,
 /area/antares/habitation/storage_maintenance)
 "cR" = (
+/obj/machinery/light{
+	icon_state = "tube_map";
+	dir = 4
+	},
+/turf/simulated/floor/tiled,
+/area/antares/crossdeck/atrium)
+"cS" = (
 /obj/structure/stairs/north,
 /turf/simulated/floor/tiled,
-/area/antares/habitation)
-"cS" = (
-/obj/structure/railing/mapped,
-/turf/simulated/floor/tiled,
-/area/antares/habitation)
+/area/antares/crossdeck/atrium)
 "cT" = (
 /turf/simulated/floor,
 /area/antares/habitation/storage_maintenance)
 "cU" = (
+/obj/structure/railing/mapped,
+/turf/simulated/floor/tiled,
+/area/antares/crossdeck/atrium)
+"cV" = (
 /obj/structure/railing/mapped{
 	icon_state = "railing0-1";
 	dir = 4
 	},
 /turf/simulated/floor/tiled,
-/area/antares/habitation)
-"cV" = (
-/turf/simulated/open,
-/area/antares/habitation)
+/area/antares/crossdeck/atrium)
 "cW" = (
+/turf/simulated/open,
+/area/antares/crossdeck/atrium)
+"cX" = (
 /obj/structure/railing/mapped{
 	icon_state = "railing0-1";
 	dir = 8
 	},
 /turf/simulated/floor/tiled,
-/area/antares/habitation)
-"cX" = (
+/area/antares/crossdeck/atrium)
+"cY" = (
+/obj/machinery/light,
+/turf/simulated/open,
+/area/antares/crossdeck/atrium)
+"cZ" = (
 /obj/structure/railing/mapped{
 	icon_state = "railing0-1";
 	dir = 8
@@ -776,38 +891,13 @@
 	icon_state = "2-4"
 	},
 /turf/simulated/floor/tiled,
-/area/antares/habitation)
-"cY" = (
+/area/antares/crossdeck/atrium)
+"da" = (
 /obj/structure/cable/cyan{
 	icon_state = "4-8"
 	},
 /turf/simulated/floor/tiled,
-/area/antares/habitation)
-"cZ" = (
-/obj/structure/railing/mapped{
-	icon_state = "railing0-1";
-	dir = 4
-	},
-/obj/structure/railing/mapped{
-	icon_state = "railing0-1";
-	dir = 8
-	},
-/turf/simulated/floor/tiled,
-/area/antares/habitation)
-"da" = (
-/obj/structure/railing/mapped{
-	icon_state = "railing0-1";
-	dir = 4
-	},
-/obj/structure/railing/mapped{
-	icon_state = "railing0-1";
-	dir = 8
-	},
-/obj/structure/cable/cyan{
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/tiled,
-/area/antares/habitation)
+/area/antares/crossdeck/atrium)
 "db" = (
 /obj/machinery/door/airlock/maintenance,
 /turf/simulated/floor,
@@ -844,11 +934,19 @@
 "dg" = (
 /obj/structure/railing/mapped{
 	icon_state = "railing0-1";
-	dir = 1
+	dir = 4
+	},
+/obj/structure/railing/mapped{
+	icon_state = "railing0-1";
+	dir = 8
 	},
 /turf/simulated/floor/tiled,
-/area/antares/habitation)
+/area/antares/crossdeck/atrium)
 "dh" = (
+/obj/structure/railing/mapped{
+	icon_state = "railing0-1";
+	dir = 4
+	},
 /obj/structure/railing/mapped{
 	icon_state = "railing0-1";
 	dir = 8
@@ -857,28 +955,27 @@
 	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled,
-/area/antares/habitation)
+/area/antares/crossdeck/atrium)
 "di" = (
 /obj/structure/cable/cyan{
-	icon_state = "0-2"
-	},
-/obj/machinery/power/apc{
-	icon_state = "apc0";
-	dir = 8
+	icon_state = "1-8"
 	},
 /turf/simulated/floor/tiled,
-/area/antares/habitation/central_hallway)
+/area/antares/habitation/fore_port_hallway)
 "dj" = (
-/obj/structure/cable/cyan{
-	icon_state = "1-2"
+/obj/machinery/light{
+	icon_state = "tube_map";
+	dir = 1
+	},
+/turf/simulated/open,
+/area/antares/crossdeck/atrium)
+"dk" = (
+/obj/structure/railing/mapped{
+	icon_state = "railing0-1";
+	dir = 1
 	},
 /turf/simulated/floor/tiled,
-/area/antares/habitation)
-"dk" = (
-/obj/structure/ladder,
-/obj/structure/lattice,
-/turf/simulated/open,
-/area/antares/habitation)
+/area/antares/crossdeck/atrium)
 "dl" = (
 /obj/machinery/door/airlock/maintenance,
 /obj/structure/cable/cyan{
@@ -894,13 +991,15 @@
 /turf/simulated/floor,
 /area/antares/habitation/storage_maintenance)
 "dn" = (
-/obj/machinery/door/airlock/autoname,
-/turf/simulated/floor/tiled,
-/area/antares/habitation)
-"do" = (
 /obj/effect/wallframe_spawn,
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled,
-/area/antares/habitation)
+/area/antares/habitation/cafe)
+"do" = (
+/obj/machinery/door/airlock/autoname,
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/tiled,
+/area/antares/habitation/cafe)
 "dp" = (
 /obj/structure/cable{
 	icon_state = "0-2"
@@ -942,12 +1041,12 @@
 /turf/simulated/wall,
 /area/antares/habitation/storage)
 "dv" = (
-/obj/machinery/door/airlock/maintenance,
-/obj/structure/cable/cyan{
-	icon_state = "1-2"
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "11-supply";
+	dir = 8
 	},
-/turf/simulated/floor,
-/area/antares/habitation/storage)
+/turf/simulated/floor/wood/walnut,
+/area/antares/habitation/cafe)
 "dw" = (
 /obj/machinery/vending/engivend,
 /turf/simulated/floor/tiled,
@@ -969,43 +1068,50 @@
 /turf/simulated/floor,
 /area/antares/habitation/cafe_maintenance)
 "dA" = (
-/obj/structure/cable/cyan{
-	icon_state = "1-2"
+/obj/structure/cable{
+	icon_state = "2-4"
 	},
-/obj/structure/cable/cyan{
-	icon_state = "2-8"
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	icon_state = "map_vent_out";
+	dir = 4
 	},
 /turf/simulated/floor/tiled,
-/area/antares/habitation/storage)
+/area/antares/habitation/fore_port_hallway)
 "dB" = (
 /obj/structure/table/standard,
 /turf/simulated/floor/tiled,
 /area/antares/habitation/storage)
 "dC" = (
-/obj/structure/cable/cyan{
-	icon_state = "1-2"
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "11-supply";
+	dir = 10
 	},
 /turf/simulated/floor/tiled,
-/area/antares/habitation/storage)
+/area/antares/habitation/fore_port_hallway)
 "dD" = (
 /obj/structure/table/rack,
 /turf/simulated/floor/tiled,
 /area/antares/habitation/storage)
 "dE" = (
 /obj/effect/wallframe_spawn,
-/turf/simulated/floor,
-/area/antares/habitation/storage)
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/tiled,
+/area/antares/habitation/hydroponics)
 "dF" = (
 /obj/machinery/door/airlock/autoname,
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled,
-/area/antares/habitation/storage)
+/area/antares/habitation/hydroponics)
 "dG" = (
-/obj/machinery/door/airlock/autoname,
-/obj/structure/cable/cyan{
-	icon_state = "1-2"
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "11-supply";
+	dir = 6
 	},
 /turf/simulated/floor/tiled,
-/area/antares/habitation/storage)
+/area/antares/habitation/fore_starboard_hallway)
 "dH" = (
 /obj/structure/table/rack,
 /turf/simulated/floor/tiled,
@@ -1026,6 +1132,10 @@
 /obj/structure/cable/cyan{
 	icon_state = "1-8"
 	},
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	icon_state = "map_scrubber_on";
+	dir = 4
+	},
 /turf/simulated/floor/wood/walnut,
 /area/antares/habitation/library_storage)
 "dK" = (
@@ -1039,11 +1149,16 @@
 /obj/structure/cable/cyan{
 	icon_state = "1-2"
 	},
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	icon_state = "map_vent_out";
+	dir = 8
+	},
 /turf/simulated/floor/tiled,
-/area/antares/habitation/technical_storage)
+/area/antares/habitation/fore_starboard_hallway)
 "dN" = (
-/obj/effect/wallframe_spawn,
-/turf/simulated/floor,
+/obj/machinery/door/airlock/autoname,
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/tiled,
 /area/antares/habitation/logistics_foyer)
 "dO" = (
 /obj/machinery/door/airlock/maintenance,
@@ -1071,15 +1186,13 @@
 /turf/simulated/floor/tiled,
 /area/antares/habitation/logistics_foyer)
 "dT" = (
-/obj/machinery/power/apc{
-	icon_state = "apc0";
-	dir = 1
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "11-supply";
+	dir = 6
 	},
-/obj/structure/cable/cyan{
-	icon_state = "0-4"
-	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled,
-/area/antares/habitation/port_hallway)
+/area/antares/habitation/hydroponics)
 "dU" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -1087,7 +1200,11 @@
 /turf/simulated/floor,
 /area/antares/habitation/logistics_maintenance)
 "dV" = (
-/obj/structure/table/standard,
+/obj/machinery/door/airlock/autoname,
+/obj/structure/cable/cyan{
+	icon_state = "1-2"
+	},
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled,
 /area/antares/habitation/logistics_foyer)
 "dW" = (
@@ -1109,71 +1226,72 @@
 /turf/simulated/floor/tiled,
 /area/antares/habitation/logistics)
 "dZ" = (
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	icon_state = "map-supply";
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/wood/walnut,
+/area/antares/habitation/cafe)
+"ea" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "11-supply";
+	dir = 9
+	},
+/turf/simulated/floor/tiled/white,
+/area/antares/habitation/medbay)
+"eb" = (
 /obj/structure/cable/cyan{
-	icon_state = "1-2"
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/tiled/white,
+/area/antares/habitation/medbay)
+"ec" = (
+/obj/structure/cable/cyan{
+	icon_state = "0-2"
+	},
+/obj/machinery/power/apc{
+	icon_state = "apc0";
+	dir = 1
 	},
 /obj/structure/cable/cyan{
 	icon_state = "2-8"
 	},
-/turf/simulated/floor/tiled,
-/area/antares/habitation/logistics)
-"ea" = (
-/obj/machinery/power/smes/buildable/max_cap_in_out,
-/obj/structure/cable/cyan{
-	icon_state = "0-2"
-	},
-/turf/simulated/floor,
-/area/antares/habitation/logistics_maintenance)
-"eb" = (
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/obj/structure/cable,
-/obj/machinery/power/terminal{
-	icon_state = "term";
-	dir = 8
-	},
-/turf/simulated/floor,
-/area/antares/habitation/logistics_maintenance)
-"ec" = (
-/obj/structure/cable/cyan{
-	icon_state = "1-4"
-	},
-/turf/simulated/floor/tiled,
-/area/antares/habitation/logistics)
+/turf/simulated/floor/tiled/white,
+/area/antares/habitation/medbay)
 "ed" = (
-/obj/machinery/door/airlock/maintenance,
-/obj/structure/cable/cyan{
-	icon_state = "4-8"
-	},
-/turf/simulated/floor,
-/area/antares/habitation/logistics_maintenance)
-"ee" = (
-/obj/structure/cable/cyan{
-	icon_state = "1-8"
+/obj/machinery/light{
+	icon_state = "tube_map";
+	dir = 4
 	},
 /obj/structure/cable/cyan{
 	icon_state = "1-2"
 	},
-/turf/simulated/floor,
-/area/antares/habitation/logistics_maintenance)
-"ef" = (
-/obj/machinery/power/apc{
-	icon_state = "apc0";
+/turf/simulated/floor/tiled,
+/area/antares/habitation/fore_port_hallway)
+"ee" = (
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	icon_state = "map-supply";
 	dir = 8
 	},
-/obj/structure/cable/cyan,
-/obj/structure/cable/cyan{
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/tiled,
+/area/antares/habitation/fore_hallway)
+"ef" = (
+/obj/structure/cable{
 	icon_state = "1-2"
 	},
-/turf/simulated/floor,
-/area/antares/habitation/logistics_maintenance)
-"eg" = (
-/obj/structure/cable{
-	icon_state = "1-4"
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	icon_state = "map_scrubber_on";
+	dir = 4
 	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/fore_port_hallway)
+"eg" = (
+/obj/effect/wallframe_spawn,
+/obj/machinery/door/firedoor,
 /turf/simulated/floor,
-/area/antares/habitation/logistics_maintenance)
+/area/antares/habitation/logistics_foyer)
 "eh" = (
 /obj/machinery/door/airlock/maintenance,
 /obj/structure/cable{
@@ -1182,9 +1300,13 @@
 /turf/simulated/floor,
 /area/antares/habitation/logistics_maintenance)
 "ei" = (
-/obj/effect/wallframe_spawn/reinforced/hull,
-/turf/simulated/floor,
-/area/antares/habitation/logistics)
+/obj/machinery/door/airlock/autoname,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/tiled,
+/area/antares/habitation/aft_port_hallway)
 "ej" = (
 /obj/machinery/door/airlock/external/bolted,
 /turf/simulated/floor,
@@ -1196,18 +1318,20 @@
 /turf/simulated/wall,
 /area/antares/habitation/port_thrusters)
 "em" = (
-/obj/structure/cable/cyan{
-	icon_state = "1-2"
+/obj/machinery/power/apc,
+/obj/structure/cable{
+	icon_state = "0-4"
 	},
-/turf/simulated/floor,
-/area/antares/habitation/logistics_maintenance)
+/turf/simulated/floor/tiled,
+/area/antares/habitation/port_hallway)
 "en" = (
 /turf/simulated/floor,
 /area/antares/habitation/port_thrusters)
 "eo" = (
-/obj/effect/wallframe_spawn/reinforced/hull,
-/turf/simulated/floor,
-/area/antares/habitation/port_thrusters)
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/tiled,
+/area/antares/habitation/hydroponics)
 "ep" = (
 /obj/structure/ladder,
 /turf/simulated/floor,
@@ -1240,21 +1364,35 @@
 /turf/simulated/floor/grass,
 /area/antares/habitation/fore_port_hallway)
 "ev" = (
-/obj/machinery/light,
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	icon_state = "11-scrubbers";
-	dir = 4
+/obj/structure/cable/cyan{
+	icon_state = "4-8"
 	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	icon_state = "map-scrubbers";
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/tiled,
-/area/antares/habitation/fore_port_hallway)
+/area/antares/habitation/fore_hallway)
 "ew" = (
 /obj/machinery/door/airlock/autoname,
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled,
-/area/antares/habitation/fore_port_hallway)
+/area/antares/habitation/aft_port_hallway)
 "ex" = (
-/obj/effect/wallframe_spawn,
-/turf/simulated/floor/tiled,
-/area/antares/habitation/fore_port_hallway)
+/obj/structure/cable/cyan{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "11-supply";
+	dir = 6
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	icon_state = "11-scrubbers";
+	dir = 6
+	},
+/turf/simulated/floor/tiled/white,
+/area/antares/habitation/medbay)
 "ey" = (
 /turf/simulated/floor/tiled,
 /area/antares/habitation/fore_starboard_hallway)
@@ -1277,56 +1415,62 @@
 /turf/simulated/floor/tiled,
 /area/antares/habitation/hydroponics)
 "eD" = (
-/obj/effect/wallframe_spawn,
-/turf/simulated/floor/tiled,
-/area/antares/habitation/hydroponics)
-"eE" = (
 /obj/machinery/door/airlock/autoname,
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/tiled/white,
+/area/antares/habitation/medbay)
+"eE" = (
+/obj/machinery/light{
+	icon_state = "tube_map";
+	dir = 1
+	},
+/obj/structure/cable/cyan{
+	icon_state = "4-8"
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/port_hallway)
+"eF" = (
+/obj/effect/wallframe_spawn/reinforced/hull,
+/obj/machinery/door/firedoor,
+/turf/simulated/floor,
+/area/antares/habitation/storage_maintenance)
+"eG" = (
 /obj/structure/cable/cyan{
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled,
-/area/antares/habitation/hydroponics)
-"eF" = (
-/obj/machinery/door/airlock/autoname,
-/turf/simulated/floor/tiled,
-/area/antares/habitation/hydroponics)
-"eG" = (
-/obj/structure/cable{
-	icon_state = "1-4"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	icon_state = "11-scrubbers";
-	dir = 4
-	},
-/turf/simulated/floor/tiled,
-/area/antares/habitation/fore_port_hallway)
-"eH" = (
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
-	icon_state = "11-scrubbers";
-	dir = 4
-	},
-/turf/simulated/floor/tiled,
-/area/antares/habitation/fore_port_hallway)
-"eI" = (
 /obj/structure/cable/cyan{
-	icon_state = "1-8"
+	icon_state = "2-8"
 	},
-/obj/structure/cable/cyan{
-	icon_state = "4-8"
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	icon_state = "map_scrubber_on";
+	dir = 8
 	},
 /turf/simulated/floor/tiled,
 /area/antares/habitation/fore_starboard_hallway)
-"eJ" = (
-/obj/machinery/door/airlock/autoname,
-/obj/structure/cable/cyan{
+"eH" = (
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	icon_state = "map_vent_out";
+	dir = 4
+	},
+/turf/simulated/floor/wood/walnut,
+/area/antares/habitation/cafe)
+"eI" = (
+/obj/structure/cable{
 	icon_state = "1-2"
 	},
+/obj/structure/cable/cyan{
+	icon_state = "4-8"
+	},
 /turf/simulated/floor/tiled,
-/area/antares/habitation/kitchen)
+/area/antares/habitation/port_hallway)
+"eJ" = (
+/obj/machinery/door/airlock/maintenance,
+/obj/structure/cable/cyan{
+	icon_state = "4-8"
+	},
+/obj/machinery/door/firedoor,
+/turf/simulated/floor,
+/area/antares/habitation/medbay)
 "eK" = (
 /obj/machinery/smartfridge,
 /turf/simulated/floor/tiled,
@@ -1345,20 +1489,26 @@
 /turf/simulated/floor/tiled/white,
 /area/antares/habitation/kitchen)
 "eO" = (
-/obj/structure/table/steel_reinforced,
-/turf/simulated/floor/tiled/white,
-/area/antares/habitation/kitchen)
-"eP" = (
 /obj/effect/wallframe_spawn,
-/obj/structure/cable/cyan{
-	icon_state = "1-2"
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/tiled/white,
+/area/antares/habitation/medbay)
+"eP" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "11-supply";
+	dir = 9
 	},
-/turf/simulated/floor/tiled,
-/area/antares/habitation/kitchen)
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	icon_state = "11-scrubbers";
+	dir = 8
+	},
+/turf/simulated/floor/tiled/white,
+/area/antares/habitation/medbay)
 "eQ" = (
-/obj/machinery/door/airlock/maintenance,
-/turf/simulated/floor,
-/area/antares/habitation/kitchen)
+/obj/structure/table/standard,
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/tiled,
+/area/antares/habitation/logistics_foyer)
 "eR" = (
 /obj/structure/cable/cyan{
 	icon_state = "2-8"
@@ -1456,22 +1606,32 @@
 "fb" = (
 /obj/machinery/door/airlock/maintenance,
 /obj/structure/cable/cyan{
-	icon_state = "4-8"
+	icon_state = "1-2"
 	},
+/obj/machinery/door/firedoor,
 /turf/simulated/floor,
-/area/antares/habitation/library_storage)
+/area/antares/habitation/technical_storage)
 "fc" = (
-/obj/structure/cable/cyan{
-	icon_state = "4-8"
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	icon_state = "11-scrubbers";
+	dir = 9
 	},
-/turf/simulated/floor/wood/walnut,
-/area/antares/habitation/library_storage)
+/turf/simulated/floor/tiled/white,
+/area/antares/habitation/medbay)
 "fd" = (
 /obj/structure/cable/cyan{
-	icon_state = "4-8"
+	icon_state = "1-2"
 	},
-/turf/simulated/floor/wood/walnut,
-/area/antares/habitation/cafe)
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	icon_state = "map-supply";
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	icon_state = "map-scrubbers";
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/fore_port_hallway)
 "fe" = (
 /obj/structure/cable/cyan{
 	icon_state = "0-8"
@@ -1491,20 +1651,29 @@
 /turf/simulated/floor/wood/walnut,
 /area/antares/habitation/cafe)
 "fh" = (
-/obj/effect/wallframe_spawn,
-/turf/simulated/floor/tiled,
-/area/antares/habitation/cafe)
+/obj/machinery/door/airlock/maintenance,
+/obj/machinery/door/firedoor,
+/turf/simulated/floor,
+/area/antares/habitation/storage_maintenance)
 "fi" = (
 /obj/machinery/door/airlock/autoname,
+/obj/structure/cable/cyan{
+	icon_state = "1-2"
+	},
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled,
-/area/antares/habitation/cafe)
+/area/antares/habitation/kitchen)
 "fj" = (
-/obj/machinery/door/airlock/autoname,
-/obj/structure/cable{
-	icon_state = "4-8"
+/obj/structure/cable/cyan{
+	icon_state = "2-4"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	icon_state = "11-scrubbers";
+	dir = 10
 	},
 /turf/simulated/floor/tiled,
-/area/antares/habitation/fore_hallway)
+/area/antares/habitation/fore_port_hallway)
 "fk" = (
 /turf/simulated/floor,
 /area/antares/habitation/cafe_maintenance)
@@ -1543,12 +1712,10 @@
 /turf/simulated/floor/tiled,
 /area/antares/habitation/fore_hallway)
 "fr" = (
-/obj/machinery/door/airlock/maintenance,
-/obj/structure/cable/cyan{
-	icon_state = "1-2"
-	},
-/turf/simulated/floor,
-/area/antares/habitation/cafe_maintenance)
+/obj/structure/table/steel_reinforced,
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/tiled/white,
+/area/antares/habitation/kitchen)
 "fs" = (
 /obj/structure/cable/cyan{
 	icon_state = "1-2"
@@ -1609,27 +1776,27 @@
 /turf/simulated/floor,
 /area/antares/habitation/speakeasy)
 "fB" = (
-/obj/machinery/door/airlock/autoname,
-/obj/structure/cable{
-	icon_state = "1-2"
-	},
-/obj/structure/cable/cyan{
-	icon_state = "1-2"
-	},
-/turf/simulated/floor/tiled/white,
-/area/antares/habitation/medbay)
-"fC" = (
-/obj/structure/cable/cyan{
-	icon_state = "2-4"
-	},
+/obj/effect/wallframe_spawn/reinforced/hull,
+/obj/machinery/door/firedoor,
 /turf/simulated/floor,
-/area/antares/habitation/starboard_thrusters)
-"fD" = (
+/area/antares/habitation/port_hallway)
+"fC" = (
 /obj/structure/cable/cyan{
 	icon_state = "1-8"
 	},
-/turf/simulated/floor,
-/area/antares/habitation/starboard_thrusters)
+/turf/simulated/floor/tiled,
+/area/antares/habitation/port_hallway)
+"fD" = (
+/obj/structure/cable/cyan{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	icon_state = "11-scrubbers";
+	dir = 6
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/fore_starboard_hallway)
 "fE" = (
 /turf/simulated/wall,
 /area/antares/habitation/starboard_thrusters)
@@ -1645,12 +1812,16 @@
 /turf/simulated/floor/tiled/white,
 /area/antares/habitation/medbay)
 "fH" = (
-/obj/machinery/door/airlock/maintenance,
+/obj/structure/table/standard,
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/turf/simulated/floor,
-/area/antares/habitation/starboard_thrusters)
+/obj/structure/cable/cyan{
+	icon_state = "4-8"
+	},
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/tiled/white,
+/area/antares/habitation/medbay)
 "fI" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -1665,10 +1836,12 @@
 /area/antares/habitation/starboard_thrusters)
 "fK" = (
 /obj/structure/cable/cyan{
-	icon_state = "4-8"
+	icon_state = "1-2"
 	},
-/turf/simulated/floor,
-/area/antares/habitation/starboard_thrusters)
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/tiled/white,
+/area/antares/habitation/medbay)
 "fL" = (
 /obj/structure/cable{
 	icon_state = "1-2"
@@ -1676,27 +1849,36 @@
 /turf/simulated/floor,
 /area/antares/habitation/starboard_thrusters)
 "fM" = (
-/obj/machinery/door/airlock/maintenance,
+/obj/machinery/door/airlock/autoname,
 /obj/structure/cable{
-	icon_state = "1-2"
+	icon_state = "4-8"
 	},
 /obj/structure/cable/cyan{
-	icon_state = "1-2"
+	icon_state = "4-8"
 	},
-/turf/simulated/floor,
-/area/antares/habitation/starboard_thrusters)
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/tiled/white,
+/area/antares/habitation/medbay)
 "fN" = (
-/obj/effect/wallframe_spawn/reinforced/hull,
-/turf/simulated/floor,
-/area/antares/habitation/starboard_thrusters)
+/obj/machinery/door/airlock/autoname,
+/obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/tiled,
+/area/antares/habitation/cafe)
 "fO" = (
-/obj/structure/cable,
-/obj/machinery/power/terminal{
-	icon_state = "term";
+/obj/effect/wallframe_spawn,
+/obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "11-supply";
 	dir = 4
 	},
-/turf/simulated/floor,
-/area/antares/habitation/starboard_thrusters)
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	icon_state = "11-scrubbers";
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/fore_hallway)
 "fP" = (
 /obj/structure/cable/cyan{
 	icon_state = "1-2"
@@ -1753,38 +1935,49 @@
 /turf/simulated/floor/wood/walnut,
 /area/antares/habitation/mess_hall)
 "fZ" = (
-/obj/structure/cable/cyan{
-	icon_state = "1-8"
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	icon_state = "map-supply";
+	dir = 4
 	},
-/obj/structure/bed/chair/wood/wings/mahogany,
-/turf/simulated/floor/wood/walnut,
-/area/antares/habitation/mess_hall)
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	icon_state = "map-scrubbers";
+	dir = 4
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/fore_starboard_hallway)
 "ga" = (
-/obj/structure/cable/cyan{
-	icon_state = "4-8"
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "11-supply";
+	dir = 4
 	},
-/turf/simulated/floor/wood/walnut,
-/area/antares/habitation/bar)
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	icon_state = "11-scrubbers";
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/fore_hallway)
 "gb" = (
 /obj/machinery/door/airlock/autoname,
-/obj/structure/cable/cyan{
-	icon_state = "4-8"
-	},
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled,
 /area/antares/habitation/bar)
 "gc" = (
 /obj/machinery/door/airlock/autoname,
-/obj/structure/cable/cyan{
-	icon_state = "4-8"
-	},
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled,
 /area/antares/habitation/mess_hall)
 "gd" = (
-/obj/structure/cable/cyan{
-	icon_state = "4-8"
+/obj/machinery/light,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "11-supply";
+	dir = 4
 	},
-/turf/simulated/floor/wood/walnut,
-/area/antares/habitation/mess_hall)
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	icon_state = "11-scrubbers";
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/fore_hallway)
 "ge" = (
 /obj/machinery/light{
 	icon_state = "tube_map";
@@ -1801,13 +1994,18 @@
 /turf/simulated/floor/wood/walnut,
 /area/antares/habitation/bar)
 "gg" = (
-/obj/machinery/door/airlock/autoname,
-/turf/simulated/floor/tiled,
-/area/antares/habitation/bar)
+/obj/machinery/door/airlock/maintenance,
+/obj/machinery/door/firedoor,
+/turf/simulated/floor,
+/area/antares/habitation/logistics_maintenance)
 "gh" = (
 /obj/machinery/door/airlock/autoname,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled,
-/area/antares/habitation/mess_hall)
+/area/antares/habitation/central_hallway)
 "gi" = (
 /obj/structure/bed/chair/wood/wings/mahogany,
 /turf/simulated/floor/wood/walnut,
@@ -1854,8 +2052,9 @@
 /area/antares/habitation/central_hallway)
 "gq" = (
 /obj/effect/wallframe_spawn/reinforced/hull,
-/turf/simulated/wall,
-/area/antares/habitation/central_hallway)
+/obj/machinery/door/firedoor,
+/turf/simulated/floor,
+/area/antares/habitation/logistics)
 "gr" = (
 /obj/machinery/door/airlock/external/bolted,
 /turf/simulated/floor,
@@ -1867,12 +2066,11 @@
 /turf/simulated/open,
 /area/antares/habitation/aft_starboard_hallway)
 "gu" = (
-/obj/structure/railing/mapped{
-	icon_state = "railing0-1";
-	dir = 8
+/obj/structure/cable/cyan{
+	icon_state = "1-8"
 	},
 /turf/simulated/floor/tiled,
-/area/antares/habitation/aft_starboard_hallway)
+/area/antares/habitation/logistics)
 "gv" = (
 /obj/structure/railing/mapped{
 	icon_state = "railing0-1";
@@ -1912,9 +2110,10 @@
 /turf/simulated/wall,
 /area/antares/habitation/aft_starboard_hallway)
 "gD" = (
-/obj/effect/wallframe_spawn/reinforced/hull,
+/obj/effect/wallframe_spawn,
+/obj/machinery/door/firedoor,
 /turf/simulated/floor,
-/area/antares/habitation/aft_port_hallway)
+/area/antares/habitation/central_hallway)
 "gE" = (
 /obj/machinery/portable_atmospherics/hydroponics/soil,
 /turf/simulated/floor/grass,
@@ -1925,8 +2124,9 @@
 /area/antares/habitation/aft_starboard_hallway)
 "gG" = (
 /obj/effect/wallframe_spawn/reinforced/hull,
+/obj/machinery/door/firedoor,
 /turf/simulated/floor,
-/area/antares/habitation/aft_starboard_hallway)
+/area/antares/habitation/aft_port_hallway)
 "gH" = (
 /obj/machinery/vending/cigarette,
 /turf/simulated/floor/tiled,
@@ -1944,19 +2144,27 @@
 /turf/simulated/floor/tiled,
 /area/antares/habitation/aft_starboard_hallway)
 "gL" = (
-/obj/structure/cable{
+/obj/machinery/door/airlock/autoname,
+/obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/tiled,
+/area/antares/habitation/hydroponics)
+"gM" = (
+/obj/machinery/door/airlock/maintenance,
+/obj/structure/cable/cyan{
 	icon_state = "1-2"
 	},
-/turf/simulated/floor/tiled,
-/area/antares/habitation/port_hallway)
-"gM" = (
-/obj/structure/ladder,
-/turf/simulated/floor/tiled,
-/area/antares/habitation/port_hallway)
+/obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor,
+/area/antares/habitation/medbay)
 "gN" = (
 /obj/effect/wallframe_spawn,
-/turf/simulated/floor/tiled,
-/area/antares/habitation/port_hallway)
+/obj/machinery/door/firedoor,
+/turf/simulated/floor,
+/area/antares/habitation/storage)
 "gO" = (
 /turf/simulated/floor/tiled,
 /area/antares/habitation/starboard_hallway)
@@ -2007,19 +2215,18 @@
 /turf/simulated/floor/tiled,
 /area/antares/habitation/fore_port_hallway)
 "gV" = (
+/turf/simulated/floor,
+/area/antares/habitation/logistics_maintenance)
+"gW" = (
+/obj/structure/railing/mapped{
+	icon_state = "railing0-1";
+	dir = 8
+	},
 /obj/structure/cable/cyan{
 	icon_state = "1-2"
 	},
-/obj/structure/cable/cyan{
-	icon_state = "2-4"
-	},
 /turf/simulated/floor/tiled,
-/area/antares/habitation/fore_starboard_hallway)
-"gW" = (
-/obj/structure/cable/cyan,
-/obj/machinery/power/apc,
-/turf/simulated/floor/tiled,
-/area/antares/habitation)
+/area/antares/crossdeck/atrium)
 "gX" = (
 /obj/structure/cable/cyan{
 	icon_state = "2-8"
@@ -2060,15 +2267,16 @@
 /turf/simulated/floor/tiled,
 /area/antares/habitation/storage)
 "hb" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/structure/cable,
 /obj/machinery/power/apc{
 	icon_state = "apc0";
-	dir = 1
+	dir = 4
 	},
-/obj/structure/cable/cyan{
-	icon_state = "0-8"
-	},
-/turf/simulated/floor/tiled,
-/area/antares/habitation/fore_starboard_hallway)
+/turf/simulated/floor,
+/area/antares/habitation/logistics_maintenance)
 "hc" = (
 /obj/structure/cable{
 	icon_state = "0-2"
@@ -2093,61 +2301,51 @@
 /obj/structure/cable{
 	icon_state = "4-8"
 	},
-/obj/structure/cable{
-	icon_state = "1-4"
-	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled,
-/area/antares/habitation/aft_port_hallway)
+/area/antares/habitation/fore_port_hallway)
 "hf" = (
-/obj/structure/cable{
-	icon_state = "4-8"
-	},
-/obj/structure/cable{
-	icon_state = "1-4"
-	},
-/turf/simulated/floor/tiled,
-/area/antares/habitation/aft_starboard_hallway)
-"hg" = (
-/obj/machinery/light/small{
-	icon_state = "bulb_map";
-	dir = 1
-	},
 /obj/structure/cable/cyan{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/tiled,
+/area/antares/habitation/fore_port_hallway)
+"hg" = (
+/obj/effect/wallframe_spawn/reinforced/hull,
+/obj/machinery/door/firedoor,
+/turf/simulated/floor,
+/area/antares/habitation/aft_starboard_hallway)
+"hh" = (
+/obj/structure/cable{
 	icon_state = "2-4"
 	},
 /turf/simulated/floor,
 /area/antares/habitation/logistics_maintenance)
-"hh" = (
-/obj/structure/cable/cyan{
-	icon_state = "1-8"
+"hi" = (
+/obj/structure/cable{
+	icon_state = "1-4"
 	},
-/obj/structure/cable/cyan{
+/obj/structure/cable{
 	icon_state = "4-8"
 	},
 /turf/simulated/floor,
-/area/antares/habitation/starboard_thrusters)
-"hi" = (
-/obj/machinery/power/apc{
-	icon_state = "apc0";
-	dir = 1
-	},
-/obj/structure/cable/cyan{
-	icon_state = "0-8"
-	},
-/turf/simulated/floor,
-/area/antares/habitation/starboard_thrusters)
-"hj" = (
-/obj/structure/cable/cyan{
-	icon_state = "1-8"
-	},
-/turf/simulated/floor,
 /area/antares/habitation/logistics_maintenance)
+"hj" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/tiled,
+/area/antares/habitation/fore_starboard_hallway)
 "hk" = (
-/obj/structure/cable/cyan{
-	icon_state = "1-8"
+/obj/structure/cable{
+	icon_state = "2-8"
 	},
-/turf/simulated/floor/tiled/white,
-/area/antares/habitation/medbay)
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/tiled,
+/area/antares/habitation/fore_starboard_hallway)
 "hl" = (
 /obj/structure/cable/cyan,
 /obj/machinery/power/apc,
@@ -2155,18 +2353,15 @@
 /area/antares/habitation/medbay)
 "hm" = (
 /obj/structure/cable/cyan{
-	icon_state = "0-8"
+	icon_state = "1-2"
 	},
-/obj/machinery/power/apc{
-	icon_state = "apc0";
-	dir = 1
+/obj/structure/cable/cyan{
+	icon_state = "2-8"
 	},
-/obj/machinery/light{
-	icon_state = "tube_map";
-	dir = 1
-	},
-/turf/simulated/floor/tiled,
-/area/antares/habitation/hydroponics)
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/tiled/white,
+/area/antares/habitation/medbay)
 "hn" = (
 /obj/machinery/door/airlock/maintenance,
 /obj/structure/cable/cyan{
@@ -2259,14 +2454,10 @@
 /turf/simulated/floor,
 /area/antares/habitation/speakeasy)
 "hy" = (
-/obj/structure/cable/cyan{
-	icon_state = "1-2"
-	},
-/obj/structure/cable/cyan{
-	icon_state = "2-8"
-	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled,
-/area/antares/habitation/port_hallway)
+/area/antares/habitation/fore_port_hallway)
 "hz" = (
 /obj/structure/cable/cyan{
 	icon_state = "0-8"
@@ -2288,32 +2479,33 @@
 /turf/simulated/floor/tiled,
 /area/antares/habitation/logistics)
 "hB" = (
-/obj/structure/cable/cyan{
-	icon_state = "2-8"
+/obj/structure/cable{
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled,
-/area/antares/habitation/fore_starboard_hallway)
+/area/antares/habitation/central_hallway)
 "hC" = (
-/obj/machinery/door/airlock/autoname,
-/obj/structure/cable/cyan{
-	icon_state = "1-2"
+/obj/machinery/light/small{
+	icon_state = "bulb_map";
+	dir = 1
 	},
-/turf/simulated/floor/tiled,
-/area/antares/habitation/fore_starboard_hallway)
+/obj/structure/cable{
+	icon_state = "2-4"
+	},
+/turf/simulated/floor,
+/area/antares/habitation/logistics_maintenance)
 "hD" = (
-/obj/structure/cable/cyan{
-	icon_state = "1-2"
+/obj/structure/cable{
+	icon_state = "1-8"
 	},
-/turf/simulated/floor/tiled,
-/area/antares/habitation/starboard_hallway)
+/turf/simulated/floor,
+/area/antares/habitation/logistics_maintenance)
 "hE" = (
-/obj/structure/cable/cyan,
-/obj/machinery/power/apc{
-	icon_state = "apc0";
-	dir = 8
+/obj/structure/cable{
+	icon_state = "1-4"
 	},
-/turf/simulated/floor/tiled,
-/area/antares/habitation/starboard_hallway)
+/turf/simulated/floor,
+/area/antares/habitation/starboard_thrusters)
 "hF" = (
 /obj/machinery/power/apc{
 	icon_state = "apc0";
@@ -2331,12 +2523,10 @@
 /turf/simulated/floor,
 /area/antares/habitation/medbay_maintenance)
 "hH" = (
-/obj/machinery/door/airlock/maintenance,
-/obj/structure/cable/cyan{
-	icon_state = "4-8"
-	},
-/turf/simulated/floor,
-/area/antares/habitation/medbay)
+/obj/machinery/door/airlock/autoname,
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/tiled,
+/area/antares/habitation/storage)
 "hI" = (
 /obj/structure/cable/cyan{
 	icon_state = "1-2"
@@ -2348,28 +2538,23 @@
 /area/antares/habitation/medbay)
 "hJ" = (
 /obj/structure/cable/cyan{
-	icon_state = "0-2"
+	icon_state = "1-8"
 	},
-/obj/machinery/power/apc{
-	icon_state = "apc0";
-	dir = 1
-	},
-/turf/simulated/floor/tiled/white,
-/area/antares/habitation/medbay)
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/tiled,
+/area/antares/habitation/fore_port_hallway)
 "hK" = (
-/obj/machinery/light{
-	icon_state = "tube_map";
-	dir = 8
+/obj/structure/cable/cyan{
+	icon_state = "1-2"
 	},
 /turf/simulated/floor/tiled,
-/area/antares/habitation)
+/area/antares/crossdeck/atrium)
 "hL" = (
-/obj/machinery/light{
-	icon_state = "tube_map";
-	dir = 4
-	},
-/turf/simulated/floor/tiled,
-/area/antares/habitation)
+/obj/structure/ladder,
+/obj/structure/lattice,
+/turf/simulated/open,
+/area/antares/crossdeck/atrium)
 "hM" = (
 /obj/machinery/light{
 	icon_state = "tube_map";
@@ -2414,23 +2599,29 @@
 /turf/simulated/floor/tiled/white,
 /area/antares/habitation/medbay)
 "hS" = (
-/obj/structure/cable/cyan{
+/obj/structure/cable{
 	icon_state = "1-2"
 	},
-/obj/machinery/light{
-	icon_state = "tube_map";
-	dir = 4
-	},
-/turf/simulated/floor/tiled/white,
-/area/antares/habitation/medbay)
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/tiled,
+/area/antares/habitation/fore_starboard_hallway)
 "hT" = (
 /obj/machinery/light,
 /turf/simulated/floor/tiled/white,
 /area/antares/habitation/medbay)
 "hU" = (
 /obj/machinery/light,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	icon_state = "11-scrubbers";
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "11-supply";
+	dir = 4
+	},
 /turf/simulated/floor/tiled,
-/area/antares/habitation/fore_hallway)
+/area/antares/habitation/fore_port_hallway)
 "hV" = (
 /obj/machinery/portable_atmospherics/hydroponics/soil,
 /obj/machinery/light{
@@ -2450,26 +2641,36 @@
 /turf/simulated/floor,
 /area/antares/habitation/elevator_substation)
 "hX" = (
-/obj/structure/cable/cyan{
-	icon_state = "4-8"
+/obj/machinery/power/apc{
+	icon_state = "apc0";
+	dir = 1
 	},
-/obj/machinery/light,
-/turf/simulated/floor/tiled,
-/area/antares/habitation/fore_starboard_hallway)
+/obj/structure/cable{
+	icon_state = "0-8"
+	},
+/turf/simulated/floor,
+/area/antares/habitation/starboard_thrusters)
 "hY" = (
-/obj/machinery/light{
-	icon_state = "tube_map";
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	icon_state = "11-scrubbers";
 	dir = 4
 	},
-/turf/simulated/floor/tiled,
-/area/antares/habitation/fore_starboard_hallway)
-"hZ" = (
-/obj/machinery/light{
-	icon_state = "tube_map";
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "11-supply";
 	dir = 4
 	},
 /turf/simulated/floor/tiled,
 /area/antares/habitation/fore_port_hallway)
+"hZ" = (
+/obj/machinery/door/airlock/maintenance,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/turf/simulated/floor,
+/area/antares/habitation/port_thrusters)
 "ia" = (
 /obj/machinery/light{
 	icon_state = "tube_map";
@@ -2499,26 +2700,36 @@
 /turf/simulated/floor/tiled,
 /area/antares/habitation/central_hallway)
 "ie" = (
-/obj/machinery/light{
-	icon_state = "tube_map";
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	icon_state = "map_scrubber_on";
 	dir = 4
 	},
-/turf/simulated/floor/tiled,
-/area/antares/habitation/aft_starboard_hallway)
+/turf/simulated/floor/wood/walnut,
+/area/antares/habitation/cafe)
 "if" = (
-/obj/structure/cable{
-	icon_state = "4-8"
+/obj/structure/cable/cyan{
+	icon_state = "1-2"
 	},
-/obj/machinery/light,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "11-supply";
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	icon_state = "11-scrubbers";
+	dir = 8
+	},
 /turf/simulated/floor/tiled,
-/area/antares/habitation/aft_port_hallway)
+/area/antares/habitation/fore_port_hallway)
 "ig" = (
-/obj/structure/cable{
-	icon_state = "4-8"
+/obj/machinery/light{
+	icon_state = "tube_map";
+	dir = 8
 	},
-/obj/machinery/light,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
 /turf/simulated/floor/tiled,
-/area/antares/habitation/aft_starboard_hallway)
+/area/antares/habitation/central_hallway)
 "ih" = (
 /obj/machinery/light,
 /turf/simulated/floor/tiled,
@@ -2571,16 +2782,15 @@
 /turf/simulated/floor/tiled,
 /area/antares/habitation/logistics)
 "iq" = (
-/obj/machinery/light,
-/turf/simulated/open,
-/area/antares/habitation)
+/obj/structure/cable/cyan,
+/obj/machinery/power/apc,
+/turf/simulated/floor/tiled,
+/area/antares/crossdeck/atrium)
 "ir" = (
-/obj/machinery/light{
-	icon_state = "tube_map";
-	dir = 1
-	},
-/turf/simulated/open,
-/area/antares/habitation)
+/obj/machinery/door/airlock/autoname,
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/tiled,
+/area/antares/crossdeck/atrium)
 "is" = (
 /obj/machinery/light{
 	icon_state = "tube_map";
@@ -2729,15 +2939,10 @@
 /turf/simulated/floor,
 /area/antares/habitation/elevator_substation)
 "iO" = (
-/obj/structure/cable/cyan{
-	icon_state = "4-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	icon_state = "11-supply";
-	dir = 4
-	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply,
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
 /turf/simulated/floor/tiled,
-/area/antares/habitation/fore_starboard_hallway)
+/area/antares/habitation/fore_hallway)
 "iP" = (
 /obj/machinery/light/small{
 	icon_state = "bulb_map";
@@ -2754,12 +2959,16 @@
 /turf/simulated/floor/wood/walnut,
 /area/antares/habitation/bar_storage)
 "iR" = (
-/obj/machinery/light/small{
-	icon_state = "bulb_map";
-	dir = 4
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	icon_state = "map-supply";
+	dir = 8
 	},
-/turf/simulated/floor/wood/walnut,
-/area/antares/habitation/bar_storage)
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	icon_state = "map-scrubbers";
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/fore_port_hallway)
 "iS" = (
 /obj/machinery/light/small{
 	icon_state = "bulb_map";
@@ -2778,23 +2987,17 @@
 /turf/simulated/floor,
 /area/antares/habitation/starboard_thrusters)
 "iU" = (
-/obj/machinery/door/airlock/maintenance,
-/obj/structure/cable/cyan{
-	icon_state = "1-2"
+/obj/structure/cable{
+	icon_state = "2-4"
 	},
 /turf/simulated/floor,
 /area/antares/habitation/port_thrusters)
 "iV" = (
-/obj/machinery/power/smes/buildable/max_cap_in_out,
-/obj/machinery/light/small{
-	icon_state = "bulb_map";
-	dir = 1
-	},
-/obj/structure/cable/cyan{
-	icon_state = "0-4"
+/obj/structure/cable{
+	icon_state = "1-8"
 	},
 /turf/simulated/floor,
-/area/antares/habitation/starboard_thrusters)
+/area/antares/habitation/port_thrusters)
 "iW" = (
 /obj/machinery/light/small{
 	icon_state = "bulb_map";
@@ -2803,26 +3006,47 @@
 /turf/simulated/floor,
 /area/antares/habitation/port_thrusters)
 "iX" = (
-/obj/machinery/light{
-	icon_state = "tube_map";
-	dir = 8
+/obj/structure/cable{
+	icon_state = "4-8"
 	},
-/turf/simulated/floor/wood/walnut,
-/area/antares/habitation/bar)
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "11-supply";
+	dir = 9
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply,
+/turf/simulated/floor/tiled,
+/area/antares/habitation/fore_port_hallway)
 "iY" = (
-/obj/machinery/light{
-	icon_state = "tube_map";
+/obj/structure/cable/cyan{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	icon_state = "11-scrubbers";
+	dir = 5
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/fore_starboard_hallway)
+"iZ" = (
+/obj/structure/cable/cyan{
+	icon_state = "1-8"
+	},
+/obj/structure/cable/cyan{
+	icon_state = "2-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "11-supply";
 	dir = 4
 	},
-/turf/simulated/floor/tiled/white,
-/area/antares/habitation/mess_hall)
-"iZ" = (
-/obj/machinery/light/small{
-	icon_state = "bulb_map";
-	dir = 1
+/obj/structure/cable/cyan{
+	icon_state = "4-8"
 	},
-/turf/simulated/floor/wood/walnut,
-/area/antares/habitation/library_storage)
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	icon_state = "11-scrubbers";
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/fore_starboard_hallway)
 "ja" = (
 /obj/machinery/light/small{
 	icon_state = "bulb_map";
@@ -2875,15 +3099,13 @@
 /turf/simulated/floor,
 /area/antares/habitation/starboard_thrusters)
 "jg" = (
-/obj/structure/cable/cyan{
-	icon_state = "1-8"
+/obj/structure/cable,
+/obj/machinery/power/apc{
+	icon_state = "apc0";
+	dir = 8
 	},
-/obj/machinery/light/small{
-	icon_state = "bulb_map";
-	dir = 4
-	},
-/turf/simulated/floor,
-/area/antares/habitation/starboard_thrusters)
+/turf/simulated/floor/tiled,
+/area/antares/habitation/central_hallway)
 "jh" = (
 /obj/machinery/light/small{
 	icon_state = "bulb_map";
@@ -2896,15 +3118,19 @@
 /turf/simulated/floor/tiled/white,
 /area/antares/habitation/medbay)
 "jj" = (
-/obj/structure/cable/cyan{
-	icon_state = "1-2"
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "11-supply";
+	dir = 4
 	},
-/obj/machinery/light{
-	icon_state = "tube_map";
+/obj/structure/cable/cyan{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	icon_state = "11-scrubbers";
 	dir = 8
 	},
-/turf/simulated/floor/tiled/white,
-/area/antares/habitation/medbay)
+/turf/simulated/floor/tiled,
+/area/antares/habitation/fore_starboard_hallway)
 "jk" = (
 /obj/structure/table/standard,
 /obj/machinery/light{
@@ -2914,40 +3140,42 @@
 /turf/simulated/floor/tiled/white,
 /area/antares/habitation/kitchen)
 "jl" = (
-/obj/machinery/light{
-	icon_state = "tube_map";
-	dir = 1
-	},
+/obj/effect/wallframe_spawn,
+/obj/machinery/door/firedoor,
 /turf/simulated/floor/tiled,
-/area/antares/habitation)
+/area/antares/crossdeck/atrium)
 "jm" = (
-/obj/structure/cable/cyan{
-	icon_state = "2-4"
-	},
-/turf/simulated/floor,
-/area/antares/habitation/port_thrusters)
-"jn" = (
-/obj/structure/cable/cyan{
-	icon_state = "1-8"
-	},
-/turf/simulated/floor,
-/area/antares/habitation/port_thrusters)
-"jo" = (
 /obj/machinery/power/apc{
 	icon_state = "apc0";
 	dir = 1
 	},
-/obj/structure/cable/cyan{
+/obj/structure/cable{
 	icon_state = "0-4"
 	},
 /turf/simulated/floor,
 /area/antares/habitation/port_thrusters)
-"jp" = (
-/obj/structure/cable/cyan{
+"jn" = (
+/obj/structure/cable{
 	icon_state = "4-8"
 	},
 /turf/simulated/floor,
 /area/antares/habitation/port_thrusters)
+"jo" = (
+/obj/machinery/light{
+	icon_state = "tube_map";
+	dir = 4
+	},
+/obj/structure/cable/cyan{
+	icon_state = "2-8"
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/fore_starboard_hallway)
+"jp" = (
+/obj/structure/cable/cyan{
+	icon_state = "1-4"
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/fore_starboard_hallway)
 "jq" = (
 /obj/structure/cable/cyan{
 	icon_state = "4-8"
@@ -2979,17 +3207,7 @@
 /area/antares/habitation/elevator_substation)
 "jv" = (
 /obj/structure/cable/cyan{
-	icon_state = "1-8"
-	},
-/obj/structure/cable/cyan{
-	icon_state = "4-8"
-	},
-/obj/structure/cable/cyan{
 	icon_state = "2-8"
-	},
-/obj/machinery/atmospherics/pipe/simple/hidden/supply{
-	icon_state = "11-supply";
-	dir = 4
 	},
 /turf/simulated/floor/tiled,
 /area/antares/habitation/fore_starboard_hallway)
@@ -2997,6 +3215,2086 @@
 /obj/machinery/door/airlock/external/bolted,
 /turf/simulated/floor/shuttle/blue,
 /area/shuttle/escape)
+"jx" = (
+/obj/machinery/light,
+/obj/structure/cable/cyan{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "11-supply";
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	icon_state = "11-scrubbers";
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/fore_starboard_hallway)
+"jy" = (
+/obj/machinery/door/airlock/autoname,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/tiled,
+/area/antares/habitation/aft_starboard_hallway)
+"jz" = (
+/obj/structure/cable/cyan{
+	icon_state = "1-2"
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/starboard_hallway)
+"jA" = (
+/obj/structure/cable/cyan{
+	icon_state = "1-4"
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/starboard_hallway)
+"jB" = (
+/obj/effect/wallframe_spawn,
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/tiled,
+/area/antares/habitation/aft_starboard_hallway)
+"jC" = (
+/obj/machinery/door/airlock/maintenance,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/door/firedoor,
+/turf/simulated/floor,
+/area/antares/habitation/starboard_thrusters)
+"jD" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/port_hallway)
+"jE" = (
+/obj/effect/wallframe_spawn/reinforced/hull,
+/obj/machinery/door/firedoor,
+/turf/simulated/floor,
+/area/antares/habitation/port_thrusters)
+"jF" = (
+/obj/effect/wallframe_spawn/reinforced/hull,
+/obj/machinery/door/firedoor,
+/turf/simulated/floor,
+/area/antares/habitation/central_hallway)
+"jG" = (
+/obj/effect/wallframe_spawn/reinforced/hull,
+/obj/machinery/door/firedoor,
+/turf/simulated/wall,
+/area/antares/habitation/central_hallway)
+"jH" = (
+/obj/structure/cable/cyan{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "11-supply";
+	dir = 6
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/technical_storage)
+"jI" = (
+/obj/machinery/door/airlock/maintenance,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/structure/cable/cyan{
+	icon_state = "1-2"
+	},
+/obj/machinery/door/firedoor,
+/turf/simulated/floor,
+/area/antares/habitation/medbay)
+"jJ" = (
+/obj/machinery/door/airlock/autoname,
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/tiled,
+/area/antares/habitation/port_hallway)
+"jK" = (
+/obj/machinery/door/airlock/autoname,
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/tiled,
+/area/antares/habitation/medbay)
+"jL" = (
+/obj/structure/cable/cyan{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "11-supply";
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	icon_state = "11-scrubbers";
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/fore_starboard_hallway)
+"jM" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/structure/cable/cyan{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	icon_state = "map-supply";
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	icon_state = "map-scrubbers";
+	dir = 4
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/fore_starboard_hallway)
+"jN" = (
+/obj/machinery/door/airlock/maintenance,
+/obj/machinery/door/firedoor,
+/turf/simulated/floor,
+/area/antares/habitation/medbay)
+"jO" = (
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/tiled,
+/area/antares/habitation/central_hallway)
+"jP" = (
+/obj/effect/wallframe_spawn/reinforced/hull,
+/obj/machinery/door/firedoor,
+/turf/simulated/floor,
+/area/antares/habitation/starboard_thrusters)
+"jQ" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/tiled,
+/area/antares/habitation/central_hallway)
+"jR" = (
+/obj/machinery/door/airlock/maintenance,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/structure/cable/cyan{
+	icon_state = "1-2"
+	},
+/obj/machinery/door/firedoor,
+/turf/simulated/floor,
+/area/antares/habitation/starboard_thrusters)
+"jS" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	icon_state = "11-scrubbers";
+	dir = 8
+	},
+/turf/simulated/floor/tiled/white,
+/area/antares/habitation/medbay)
+"jT" = (
+/obj/machinery/atmospherics/unary/vent_pump/on,
+/turf/simulated/floor/tiled,
+/area/antares/habitation/hydroponics)
+"jU" = (
+/obj/structure/table/standard,
+/obj/structure/cable/cyan{
+	icon_state = "4-8"
+	},
+/obj/machinery/door/firedoor,
+/turf/simulated/floor/tiled/white,
+/area/antares/habitation/medbay)
+"jV" = (
+/obj/machinery/atmospherics/unary/vent_pump/on,
+/turf/simulated/floor/tiled/white,
+/area/antares/habitation/medbay)
+"jW" = (
+/obj/machinery/atmospherics/unary/vent_scrubber/on,
+/turf/simulated/floor/tiled/white,
+/area/antares/habitation/medbay)
+"jX" = (
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	icon_state = "map_vent_out";
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/fore_hallway)
+"jY" = (
+/obj/structure/cable/cyan{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	icon_state = "map_scrubber_on";
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/fore_hallway)
+"jZ" = (
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	icon_state = "map_scrubber_on";
+	dir = 8
+	},
+/turf/simulated/floor/tiled/white,
+/area/antares/habitation/medbay)
+"ka" = (
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	icon_state = "map_vent_out";
+	dir = 1
+	},
+/turf/simulated/floor/tiled/white,
+/area/antares/habitation/medbay)
+"kb" = (
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	icon_state = "map_vent_out";
+	dir = 8
+	},
+/turf/simulated/floor/tiled/white,
+/area/antares/habitation/medbay)
+"kc" = (
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	icon_state = "map_scrubber_on";
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/technical_storage)
+"kd" = (
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	icon_state = "map_vent_out";
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/fore_starboard_hallway)
+"ke" = (
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	icon_state = "map_vent_out";
+	dir = 4
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/fore_port_hallway)
+"kf" = (
+/obj/structure/cable/cyan{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	icon_state = "map_scrubber_on";
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/fore_port_hallway)
+"kg" = (
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	icon_state = "map_scrubber_on";
+	dir = 4
+	},
+/turf/simulated/floor/tiled/white,
+/area/antares/habitation/kitchen)
+"kh" = (
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	icon_state = "map_scrubber_on";
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/fore_starboard_hallway)
+"ki" = (
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	icon_state = "map_vent_out";
+	dir = 4
+	},
+/turf/simulated/floor/tiled/white,
+/area/antares/habitation/kitchen)
+"kj" = (
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	icon_state = "map_scrubber_on";
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/storage)
+"kk" = (
+/obj/machinery/atmospherics/unary/vent_scrubber/on,
+/turf/simulated/floor/tiled,
+/area/antares/habitation/port_hallway)
+"kl" = (
+/obj/structure/cable/cyan{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/unary/vent_scrubber/on,
+/turf/simulated/floor/tiled,
+/area/antares/habitation/port_hallway)
+"km" = (
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	icon_state = "map_scrubber_on";
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/starboard_hallway)
+"kn" = (
+/obj/structure/cable/cyan{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/unary/vent_pump/on,
+/turf/simulated/floor/tiled/white,
+/area/antares/habitation/medbay)
+"ko" = (
+/obj/structure/cable/cyan{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/unary/vent_scrubber/on,
+/turf/simulated/floor/tiled/white,
+/area/antares/habitation/medbay)
+"kp" = (
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	icon_state = "map_vent_out";
+	dir = 4
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/central_hallway)
+"kq" = (
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	icon_state = "map_scrubber_on";
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/central_hallway)
+"kr" = (
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	icon_state = "map_vent_out";
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/starboard_hallway)
+"ks" = (
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	icon_state = "map_vent_out";
+	dir = 1
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/port_hallway)
+"kt" = (
+/obj/machinery/atmospherics/unary/vent_pump/on,
+/turf/simulated/floor/wood/walnut,
+/area/antares/habitation/bar)
+"ku" = (
+/obj/machinery/atmospherics/unary/vent_scrubber/on,
+/turf/simulated/floor/wood/walnut,
+/area/antares/habitation/bar)
+"kv" = (
+/obj/machinery/atmospherics/unary/vent_scrubber/on,
+/turf/simulated/floor/wood/walnut,
+/area/antares/habitation/mess_hall)
+"kw" = (
+/obj/machinery/atmospherics/unary/vent_pump/on,
+/turf/simulated/floor/wood/walnut,
+/area/antares/habitation/mess_hall)
+"kx" = (
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	icon_state = "map_scrubber_on";
+	dir = 4
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/logistics_foyer)
+"ky" = (
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	icon_state = "map_vent_out";
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/logistics_foyer)
+"kz" = (
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	icon_state = "map_scrubber_on";
+	dir = 4
+	},
+/turf/simulated/floor/tiled/white,
+/area/antares/habitation/medbay)
+"kA" = (
+/obj/structure/bed/chair/comfy/beige{
+	icon_state = "comfychair";
+	dir = 8
+	},
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	icon_state = "map_scrubber_on";
+	dir = 4
+	},
+/turf/simulated/floor/tiled/white,
+/area/antares/habitation/medbay)
+"kB" = (
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	icon_state = "map_scrubber_on";
+	dir = 4
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/aft_port_hallway)
+"kC" = (
+/obj/structure/railing/mapped{
+	icon_state = "railing0-1";
+	dir = 4
+	},
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	icon_state = "map_vent_out";
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/aft_port_hallway)
+"kD" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "11-supply";
+	dir = 6
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	icon_state = "11-scrubbers";
+	dir = 8
+	},
+/turf/simulated/floor/tiled/white,
+/area/antares/habitation/medbay)
+"kE" = (
+/obj/structure/cable/cyan{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	icon_state = "map-supply";
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold4w/hidden/scrubbers,
+/turf/simulated/floor/tiled/white,
+/area/antares/habitation/medbay)
+"kF" = (
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	icon_state = "map_vent_out";
+	dir = 4
+	},
+/turf/simulated/floor/tiled/white,
+/area/antares/habitation/medbay)
+"kG" = (
+/obj/structure/bed/chair/comfy/beige{
+	icon_state = "comfychair";
+	dir = 8
+	},
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	icon_state = "map_vent_out";
+	dir = 4
+	},
+/turf/simulated/floor/tiled/white,
+/area/antares/habitation/medbay)
+"kH" = (
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	icon_state = "map_scrubber_on";
+	dir = 4
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/logistics)
+"kI" = (
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	icon_state = "map_vent_out";
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/logistics)
+"kJ" = (
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	icon_state = "map_vent_out";
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/central_hallway)
+"kK" = (
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	icon_state = "map_vent_out";
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/technical_storage)
+"kL" = (
+/obj/machinery/door/airlock/autoname,
+/obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "11-supply";
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	icon_state = "11-scrubbers";
+	dir = 8
+	},
+/turf/simulated/floor/tiled/white,
+/area/antares/habitation/medbay)
+"kM" = (
+/obj/structure/cable/cyan{
+	icon_state = "2-4"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/tiled,
+/area/antares/habitation/fore_port_hallway)
+"kN" = (
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	icon_state = "map-supply";
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	icon_state = "map-scrubbers";
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/fore_port_hallway)
+"kO" = (
+/obj/structure/cable/cyan{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	icon_state = "map-supply";
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/tiled/white,
+/area/antares/habitation/medbay)
+"kP" = (
+/obj/structure/cable/cyan{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	icon_state = "map-supply";
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	icon_state = "map-scrubbers";
+	dir = 4
+	},
+/turf/simulated/floor/tiled/white,
+/area/antares/habitation/medbay)
+"kQ" = (
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	icon_state = "map_vent_out";
+	dir = 4
+	},
+/turf/simulated/floor/wood/walnut,
+/area/antares/habitation/bar_storage)
+"kR" = (
+/obj/machinery/light/small{
+	icon_state = "bulb_map";
+	dir = 4
+	},
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	icon_state = "map_scrubber_on";
+	dir = 8
+	},
+/turf/simulated/floor/wood/walnut,
+/area/antares/habitation/bar_storage)
+"kS" = (
+/obj/structure/cable/cyan{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	icon_state = "11-scrubbers";
+	dir = 6
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/technical_storage)
+"kT" = (
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	icon_state = "map_vent_out";
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/storage)
+"kU" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "11-supply";
+	dir = 6
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	icon_state = "11-scrubbers";
+	dir = 6
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/fore_port_hallway)
+"kV" = (
+/obj/structure/cable/cyan{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "11-supply";
+	dir = 9
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	icon_state = "11-scrubbers";
+	dir = 9
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/fore_port_hallway)
+"kW" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	icon_state = "map-supply";
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/tiled,
+/area/antares/habitation/fore_starboard_hallway)
+"kX" = (
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	icon_state = "map-supply";
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
+/turf/simulated/floor/tiled,
+/area/antares/habitation/port_hallway)
+"kY" = (
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	icon_state = "map-supply";
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	icon_state = "map-scrubbers";
+	dir = 1
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/port_hallway)
+"kZ" = (
+/obj/structure/cable/cyan{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply,
+/turf/simulated/floor/tiled,
+/area/antares/habitation/port_hallway)
+"la" = (
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	icon_state = "map-supply";
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	icon_state = "map-scrubbers";
+	dir = 4
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/port_hallway)
+"lb" = (
+/obj/structure/cable/cyan{
+	icon_state = "1-2"
+	},
+/obj/machinery/light{
+	icon_state = "tube_map";
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/tiled/white,
+/area/antares/habitation/medbay)
+"lc" = (
+/obj/machinery/door/airlock/maintenance,
+/obj/structure/cable/cyan{
+	icon_state = "1-2"
+	},
+/obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor,
+/area/antares/habitation/storage)
+"ld" = (
+/obj/structure/cable/cyan{
+	icon_state = "1-2"
+	},
+/obj/structure/cable/cyan{
+	icon_state = "2-4"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	icon_state = "11-scrubbers";
+	dir = 8
+	},
+/turf/simulated/floor/tiled/white,
+/area/antares/habitation/kitchen)
+"le" = (
+/obj/structure/cable/cyan{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	icon_state = "11-scrubbers";
+	dir = 10
+	},
+/turf/simulated/floor/tiled/white,
+/area/antares/habitation/kitchen)
+"lf" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	icon_state = "map-scrubbers";
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/turf/simulated/floor/tiled,
+/area/antares/habitation/fore_starboard_hallway)
+"lg" = (
+/obj/structure/cable/cyan{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/manifold4w/hidden/supply,
+/obj/machinery/atmospherics/pipe/manifold4w/hidden/scrubbers,
+/turf/simulated/floor/tiled,
+/area/antares/habitation/central_hallway)
+"lh" = (
+/obj/structure/cable/cyan{
+	icon_state = "1-2"
+	},
+/obj/structure/cable/cyan{
+	icon_state = "2-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/tiled,
+/area/antares/habitation/storage)
+"li" = (
+/obj/structure/cable/cyan{
+	icon_state = "2-4"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "11-supply";
+	dir = 9
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	icon_state = "11-scrubbers";
+	dir = 9
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/fore_port_hallway)
+"lj" = (
+/obj/structure/cable/cyan{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "11-supply";
+	dir = 10
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	icon_state = "11-scrubbers";
+	dir = 6
+	},
+/turf/simulated/floor/wood/walnut,
+/area/antares/habitation/bar_storage)
+"lk" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "11-supply";
+	dir = 10
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/tiled/white,
+/area/antares/habitation/kitchen)
+"ll" = (
+/obj/structure/cable/cyan{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	icon_state = "map-supply";
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/tiled,
+/area/antares/habitation/storage)
+"lm" = (
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	icon_state = "map-supply";
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	icon_state = "map-scrubbers";
+	dir = 4
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/logistics_foyer)
+"ln" = (
+/obj/structure/cable/cyan{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/wood/walnut,
+/area/antares/habitation/bar_storage)
+"lo" = (
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	icon_state = "map_vent_out";
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/aft_starboard_hallway)
+"lp" = (
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	icon_state = "map-supply";
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	icon_state = "map-scrubbers";
+	dir = 4
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/aft_port_hallway)
+"lq" = (
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	icon_state = "map-supply";
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	icon_state = "map-scrubbers";
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/central_hallway)
+"lr" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/tiled/white,
+/area/antares/habitation/kitchen)
+"ls" = (
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	icon_state = "map_scrubber_on";
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/aft_starboard_hallway)
+"lt" = (
+/obj/machinery/light{
+	icon_state = "tube_map";
+	dir = 4
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/aft_starboard_hallway)
+"lu" = (
+/obj/machinery/door/airlock/autoname,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/tiled,
+/area/antares/habitation/fore_starboard_hallway)
+"lv" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/manifold4w/hidden/supply,
+/obj/machinery/atmospherics/pipe/manifold4w/hidden/scrubbers,
+/turf/simulated/floor/tiled,
+/area/antares/habitation/central_hallway)
+"lw" = (
+/obj/structure/cable/cyan{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "11-supply";
+	dir = 4
+	},
+/turf/simulated/floor/tiled/white,
+/area/antares/habitation/kitchen)
+"lx" = (
+/obj/machinery/door/airlock/autoname,
+/obj/structure/cable/cyan{
+	icon_state = "1-2"
+	},
+/obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/tiled/white,
+/area/antares/habitation/medbay)
+"ly" = (
+/obj/machinery/door/airlock/maintenance,
+/obj/structure/cable/cyan{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor,
+/area/antares/habitation/bar_storage)
+"lz" = (
+/obj/machinery/door/airlock/maintenance,
+/obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor,
+/area/antares/habitation/kitchen)
+"lA" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/tiled,
+/area/antares/habitation/starboard_hallway)
+"lB" = (
+/obj/structure/cable/cyan{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "11-supply";
+	dir = 5
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	icon_state = "11-scrubbers";
+	dir = 5
+	},
+/turf/simulated/floor/tiled/white,
+/area/antares/habitation/medbay)
+"lC" = (
+/obj/structure/cable/cyan{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	icon_state = "map-scrubbers";
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/turf/simulated/floor/tiled,
+/area/antares/habitation/storage)
+"lD" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "11-supply";
+	dir = 10
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	icon_state = "11-scrubbers";
+	dir = 10
+	},
+/turf/simulated/floor/tiled/white,
+/area/antares/habitation/medbay)
+"lE" = (
+/obj/machinery/door/airlock/autoname,
+/obj/structure/cable/cyan{
+	icon_state = "1-2"
+	},
+/obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/tiled,
+/area/antares/habitation/storage)
+"lF" = (
+/obj/effect/wallframe_spawn,
+/obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/tiled,
+/area/antares/habitation/fore_port_hallway)
+"lG" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "11-supply";
+	dir = 6
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	icon_state = "11-scrubbers";
+	dir = 6
+	},
+/turf/simulated/floor/wood/walnut,
+/area/antares/habitation/bar)
+"lH" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "11-supply";
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	icon_state = "11-scrubbers";
+	dir = 8
+	},
+/turf/simulated/floor/wood/walnut,
+/area/antares/habitation/bar)
+"lI" = (
+/obj/structure/cable/cyan{
+	icon_state = "1-2"
+	},
+/obj/structure/cable/cyan{
+	icon_state = "2-4"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "11-supply";
+	dir = 9
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	icon_state = "11-scrubbers";
+	dir = 9
+	},
+/turf/simulated/floor/wood/walnut,
+/area/antares/habitation/bar)
+"lJ" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/tiled/white,
+/area/antares/habitation/mess_hall)
+"lK" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	icon_state = "map-supply";
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/tiled,
+/area/antares/habitation/starboard_hallway)
+"lL" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "11-supply";
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/tiled/white,
+/area/antares/habitation/medbay)
+"lM" = (
+/obj/structure/cable/cyan{
+	icon_state = "1-2"
+	},
+/obj/structure/cable/cyan{
+	icon_state = "2-4"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/tiled,
+/area/antares/habitation/port_hallway)
+"lN" = (
+/obj/structure/cable/cyan{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/tiled,
+/area/antares/habitation/port_hallway)
+"lO" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/wood/walnut,
+/area/antares/habitation/bar)
+"lP" = (
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	icon_state = "map-supply";
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	icon_state = "map-scrubbers";
+	dir = 8
+	},
+/turf/simulated/floor/tiled/white,
+/area/antares/habitation/medbay)
+"lQ" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "11-supply";
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	icon_state = "11-scrubbers";
+	dir = 8
+	},
+/turf/simulated/floor/tiled/white,
+/area/antares/habitation/medbay)
+"lR" = (
+/obj/machinery/door/airlock/autoname,
+/obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "11-supply";
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	icon_state = "11-scrubbers";
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/medbay)
+"lS" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	icon_state = "map-scrubbers";
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/turf/simulated/floor/tiled,
+/area/antares/habitation/starboard_hallway)
+"lT" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "11-supply";
+	dir = 10
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	icon_state = "11-scrubbers";
+	dir = 8
+	},
+/turf/simulated/floor/tiled/white,
+/area/antares/habitation/medbay)
+"lU" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "11-supply";
+	dir = 6
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	icon_state = "11-scrubbers";
+	dir = 5
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/port_hallway)
+"lV" = (
+/obj/structure/ladder,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "11-supply";
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	icon_state = "11-scrubbers";
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/port_hallway)
+"lW" = (
+/obj/effect/wallframe_spawn,
+/obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "11-supply";
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	icon_state = "11-scrubbers";
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/port_hallway)
+"lX" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "11-supply";
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	icon_state = "11-scrubbers";
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/port_hallway)
+"lY" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "11-supply";
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	icon_state = "11-scrubbers";
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/port_hallway)
+"lZ" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "11-supply";
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	icon_state = "11-scrubbers";
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/port_hallway)
+"ma" = (
+/obj/machinery/light{
+	icon_state = "tube_map";
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/wood/walnut,
+/area/antares/habitation/bar)
+"mb" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "11-supply";
+	dir = 10
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	icon_state = "11-scrubbers";
+	dir = 6
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/central_hallway)
+"mc" = (
+/obj/machinery/light{
+	icon_state = "tube_map";
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/tiled/white,
+/area/antares/habitation/mess_hall)
+"md" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "11-supply";
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	icon_state = "11-scrubbers";
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/starboard_hallway)
+"me" = (
+/obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "11-supply";
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	icon_state = "11-scrubbers";
+	dir = 8
+	},
+/turf/simulated/floor/tiled/white,
+/area/antares/habitation/medbay)
+"mf" = (
+/obj/machinery/power/apc{
+	icon_state = "apc0";
+	dir = 8
+	},
+/obj/structure/cable,
+/obj/structure/cable{
+	icon_state = "0-2"
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	icon_state = "map-supply";
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	icon_state = "map-scrubbers";
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/starboard_hallway)
+"mg" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/tiled,
+/area/antares/habitation/port_hallway)
+"mh" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	icon_state = "11-scrubbers";
+	dir = 1
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/central_hallway)
+"mi" = (
+/obj/structure/ladder,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/turf/simulated/floor/tiled/white,
+/area/antares/habitation/medbay)
+"mj" = (
+/obj/item/stool/bar/padded,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/wood/walnut,
+/area/antares/habitation/mess_hall)
+"mk" = (
+/obj/machinery/door/airlock/autoname,
+/obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/tiled,
+/area/antares/habitation/logistics_foyer)
+"ml" = (
+/obj/effect/wallframe_spawn,
+/obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/tiled,
+/area/antares/habitation/aft_port_hallway)
+"mm" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "11-supply";
+	dir = 5
+	},
+/turf/simulated/floor/tiled/white,
+/area/antares/habitation/medbay)
+"mn" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/wood/walnut,
+/area/antares/habitation/mess_hall)
+"mo" = (
+/obj/structure/cable/cyan{
+	icon_state = "2-8"
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	icon_state = "map-supply";
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/tiled/white,
+/area/antares/habitation/medbay)
+"mp" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/tiled,
+/area/antares/habitation/logistics_foyer)
+"mq" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/tiled,
+/area/antares/habitation/aft_port_hallway)
+"mr" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "11-supply";
+	dir = 5
+	},
+/turf/simulated/floor/wood/walnut,
+/area/antares/habitation/bar)
+"ms" = (
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	icon_state = "11-scrubbers";
+	dir = 5
+	},
+/turf/simulated/floor/wood/walnut,
+/area/antares/habitation/bar)
+"mt" = (
+/obj/structure/bed/chair/wood/wings/mahogany,
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	icon_state = "map-supply";
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/manifold4w/hidden/scrubbers,
+/turf/simulated/floor/wood/walnut,
+/area/antares/habitation/bar)
+"mu" = (
+/obj/structure/cable/cyan{
+	icon_state = "1-4"
+	},
+/obj/structure/bed/chair/wood/wings/mahogany,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "11-supply";
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	icon_state = "11-scrubbers";
+	dir = 8
+	},
+/turf/simulated/floor/wood/walnut,
+/area/antares/habitation/bar)
+"mv" = (
+/obj/structure/cable/cyan{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "11-supply";
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	icon_state = "11-scrubbers";
+	dir = 8
+	},
+/turf/simulated/floor/wood/walnut,
+/area/antares/habitation/bar)
+"mw" = (
+/obj/machinery/door/airlock/autoname,
+/obj/structure/cable/cyan{
+	icon_state = "4-8"
+	},
+/obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "11-supply";
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	icon_state = "11-scrubbers";
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/bar)
+"mx" = (
+/obj/structure/cable/cyan{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "11-supply";
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	icon_state = "11-scrubbers";
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/central_hallway)
+"my" = (
+/obj/machinery/door/airlock/autoname,
+/obj/structure/cable/cyan{
+	icon_state = "4-8"
+	},
+/obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "11-supply";
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	icon_state = "11-scrubbers";
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/mess_hall)
+"mz" = (
+/obj/structure/cable/cyan{
+	icon_state = "4-8"
+	},
+/obj/structure/bed/chair/wood/wings/mahogany,
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "11-supply";
+	dir = 8
+	},
+/turf/simulated/floor/wood/walnut,
+/area/antares/habitation/mess_hall)
+"mA" = (
+/obj/structure/cable/cyan{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "11-supply";
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	icon_state = "11-scrubbers";
+	dir = 8
+	},
+/turf/simulated/floor/wood/walnut,
+/area/antares/habitation/mess_hall)
+"mB" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "11-supply";
+	dir = 9
+	},
+/turf/simulated/floor/wood/walnut,
+/area/antares/habitation/mess_hall)
+"mC" = (
+/obj/machinery/light,
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "11-supply";
+	dir = 4
+	},
+/turf/simulated/floor/tiled/white,
+/area/antares/habitation/medbay)
+"mD" = (
+/obj/structure/cable/cyan{
+	icon_state = "1-8"
+	},
+/obj/structure/bed/chair/wood/wings/mahogany,
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	icon_state = "map-supply";
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	icon_state = "map-scrubbers";
+	dir = 1
+	},
+/turf/simulated/floor/wood/walnut,
+/area/antares/habitation/mess_hall)
+"mE" = (
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	icon_state = "11-scrubbers";
+	dir = 9
+	},
+/turf/simulated/floor/wood/walnut,
+/area/antares/habitation/mess_hall)
+"mF" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	icon_state = "map-supply";
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	icon_state = "map-scrubbers";
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/starboard_hallway)
+"mG" = (
+/obj/structure/cable/cyan{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "11-supply";
+	dir = 4
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/logistics_foyer)
+"mH" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "11-supply";
+	dir = 4
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/logistics_foyer)
+"mI" = (
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	icon_state = "11-scrubbers";
+	dir = 8
+	},
+/turf/simulated/floor/tiled/white,
+/area/antares/habitation/medbay)
+"mJ" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "11-supply";
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	icon_state = "11-scrubbers";
+	dir = 8
+	},
+/turf/simulated/floor/tiled/white,
+/area/antares/habitation/medbay)
+"mK" = (
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	icon_state = "map-supply";
+	dir = 1
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	icon_state = "map-scrubbers";
+	dir = 1
+	},
+/turf/simulated/floor/tiled/white,
+/area/antares/habitation/medbay)
+"mL" = (
+/obj/structure/cable/cyan{
+	icon_state = "0-4"
+	},
+/obj/machinery/power/apc,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "11-supply";
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	icon_state = "11-scrubbers";
+	dir = 8
+	},
+/turf/simulated/floor/tiled/white,
+/area/antares/habitation/medbay)
+"mM" = (
+/obj/structure/cable/cyan{
+	icon_state = "1-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "11-supply";
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	icon_state = "11-scrubbers";
+	dir = 8
+	},
+/turf/simulated/floor/tiled/white,
+/area/antares/habitation/medbay)
+"mN" = (
+/obj/structure/railing/mapped{
+	icon_state = "railing0-1";
+	dir = 8
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	icon_state = "map-scrubbers";
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/turf/simulated/floor/tiled,
+/area/antares/habitation/aft_starboard_hallway)
+"mO" = (
+/obj/structure/cable/cyan{
+	icon_state = "1-2"
+	},
+/obj/machinery/light{
+	icon_state = "tube_map";
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "11-supply";
+	dir = 9
+	},
+/turf/simulated/floor/tiled/white,
+/area/antares/habitation/medbay)
+"mP" = (
+/obj/structure/table/woodentable/walnut,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/turf/simulated/floor/wood/walnut,
+/area/antares/habitation/bar)
+"mQ" = (
+/obj/structure/table/woodentable/walnut,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/wood/walnut,
+/area/antares/habitation/mess_hall)
+"mR" = (
+/obj/machinery/door/airlock/autoname,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/tiled,
+/area/antares/habitation/aft_starboard_hallway)
+"mS" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "11-supply";
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/logistics)
+"mT" = (
+/obj/machinery/atmospherics/unary/vent_scrubber/on,
+/turf/simulated/floor/tiled,
+/area/antares/habitation/aft_port_hallway)
+"mU" = (
+/obj/machinery/atmospherics/unary/vent_pump/on,
+/turf/simulated/floor/tiled,
+/area/antares/habitation/aft_port_hallway)
+"mV" = (
+/obj/machinery/atmospherics/unary/vent_scrubber/on,
+/turf/simulated/floor/tiled,
+/area/antares/habitation/aft_starboard_hallway)
+"mW" = (
+/obj/machinery/atmospherics/unary/vent_pump/on,
+/turf/simulated/floor/tiled,
+/area/antares/habitation/aft_starboard_hallway)
+"mX" = (
+/obj/machinery/door/airlock/autoname,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/tiled/white,
+/area/antares/habitation/medbay)
+"mY" = (
+/obj/machinery/door/airlock/autoname,
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/structure/cable/cyan{
+	icon_state = "1-2"
+	},
+/obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/tiled/white,
+/area/antares/habitation/medbay)
+"mZ" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/tiled,
+/area/antares/habitation/aft_starboard_hallway)
+"na" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/tiled/white,
+/area/antares/habitation/medbay)
+"nb" = (
+/obj/structure/bed/chair/wood/wings/mahogany,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/turf/simulated/floor/wood/walnut,
+/area/antares/habitation/bar)
+"nc" = (
+/obj/structure/bed/chair/wood/wings/mahogany,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/wood/walnut,
+/area/antares/habitation/mess_hall)
+"nd" = (
+/obj/structure/railing/mapped{
+	icon_state = "railing0-1";
+	dir = 8
+	},
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	icon_state = "map-supply";
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/tiled,
+/area/antares/habitation/aft_starboard_hallway)
+"ne" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	icon_state = "11-scrubbers";
+	dir = 9
+	},
+/turf/simulated/floor/tiled/white,
+/area/antares/habitation/medbay)
+"nf" = (
+/obj/structure/cable/cyan{
+	icon_state = "1-2"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	icon_state = "11-scrubbers";
+	dir = 9
+	},
+/turf/simulated/floor/tiled/white,
+/area/antares/habitation/medbay)
+"ng" = (
+/obj/effect/wallframe_spawn,
+/obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor,
+/area/antares/habitation/logistics_foyer)
+"nh" = (
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	icon_state = "map_vent_out";
+	dir = 4
+	},
+/turf/simulated/floor/wood/walnut,
+/area/antares/habitation/bar)
+"ni" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	icon_state = "11-scrubbers";
+	dir = 5
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "11-supply";
+	dir = 9
+	},
+/turf/simulated/floor/wood/walnut,
+/area/antares/habitation/bar)
+"nj" = (
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	icon_state = "map_scrubber_on";
+	dir = 8
+	},
+/turf/simulated/floor/wood/walnut,
+/area/antares/habitation/bar)
+"nk" = (
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
+	icon_state = "map-scrubbers";
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/turf/simulated/floor/tiled,
+/area/antares/habitation/central_hallway)
+"nl" = (
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	icon_state = "map_scrubber_on";
+	dir = 4
+	},
+/turf/simulated/floor/wood/walnut,
+/area/antares/habitation/mess_hall)
+"nm" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "11-supply";
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
+/turf/simulated/floor/tiled,
+/area/antares/habitation/aft_port_hallway)
+"nn" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "11-supply";
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
+/turf/simulated/floor/tiled,
+/area/antares/habitation/aft_starboard_hallway)
+"no" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "11-supply";
+	dir = 5
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	icon_state = "11-scrubbers";
+	dir = 9
+	},
+/turf/simulated/floor/wood/walnut,
+/area/antares/habitation/mess_hall)
+"np" = (
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	icon_state = "map_vent_out";
+	dir = 8
+	},
+/turf/simulated/floor/wood/walnut,
+/area/antares/habitation/mess_hall)
+"nq" = (
+/obj/structure/cable/cyan{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/tiled,
+/area/antares/habitation/logistics)
+"nr" = (
+/obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	icon_state = "11-scrubbers";
+	dir = 1
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/central_hallway)
+"ns" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	icon_state = "11-scrubbers";
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/logistics)
+"nt" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "11-supply";
+	dir = 5
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	icon_state = "11-scrubbers";
+	dir = 9
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/logistics)
+"nu" = (
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply{
+	icon_state = "map-supply";
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	icon_state = "11-scrubbers";
+	dir = 1
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/central_hallway)
+"nv" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "11-supply";
+	dir = 5
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	icon_state = "11-scrubbers";
+	dir = 5
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/aft_port_hallway)
+"nw" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/light,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "11-supply";
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	icon_state = "11-scrubbers";
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/aft_port_hallway)
+"nx" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "11-supply";
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	icon_state = "11-scrubbers";
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/aft_port_hallway)
+"ny" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "11-supply";
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	icon_state = "11-scrubbers";
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/aft_port_hallway)
+"nz" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	icon_state = "11-scrubbers";
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/aft_port_hallway)
+"nA" = (
+/obj/machinery/door/airlock/autoname,
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "11-supply";
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	icon_state = "11-scrubbers";
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/central_hallway)
+"nB" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/cable{
+	icon_state = "2-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "11-supply";
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	icon_state = "11-scrubbers";
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/central_hallway)
+"nC" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "11-supply";
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	icon_state = "11-scrubbers";
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/central_hallway)
+"nD" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "11-supply";
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	icon_state = "11-scrubbers";
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/aft_starboard_hallway)
+"nE" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	icon_state = "11-scrubbers";
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/aft_starboard_hallway)
+"nF" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "11-supply";
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	icon_state = "11-scrubbers";
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/aft_starboard_hallway)
+"nG" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/structure/cable{
+	icon_state = "1-4"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "11-supply";
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	icon_state = "11-scrubbers";
+	dir = 8
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/aft_starboard_hallway)
+"nH" = (
+/obj/structure/cable{
+	icon_state = "4-8"
+	},
+/obj/machinery/light,
+/obj/structure/cable{
+	icon_state = "1-8"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "11-supply";
+	dir = 9
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	icon_state = "11-scrubbers";
+	dir = 9
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/aft_starboard_hallway)
+"nI" = (
+/obj/machinery/door/firedoor,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/tiled,
+/area/antares/habitation/central_hallway)
+"nJ" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/tiled,
+/area/antares/habitation/central_hallway)
+"nK" = (
+/obj/effect/landmark{
+	name = "JoinLate"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	icon_state = "11-supply";
+	dir = 5
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/tiled,
+/area/antares/habitation/central_hallway)
+"nL" = (
+/obj/effect/landmark/start,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/tiled,
+/area/antares/habitation/central_hallway)
+"nM" = (
+/obj/effect/landmark{
+	name = "JoinLate"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	icon_state = "11-scrubbers";
+	dir = 5
+	},
+/turf/simulated/floor/tiled,
+/area/antares/habitation/central_hallway)
 
 (1,1,1) = {"
 aa
@@ -11016,9 +13314,9 @@ aa
 aa
 aa
 ab
-af
-af
-af
+fB
+fB
+fB
 ab
 aa
 aa
@@ -11337,15 +13635,15 @@ aa
 aa
 cC
 cC
-af
+fB
 aD
 im
-aS
-aS
-aS
+kk
+lU
+ks
 im
 aD
-af
+fB
 aa
 aa
 aa
@@ -11499,15 +13797,15 @@ aa
 aa
 cC
 cC
-af
+fB
 aR
 aS
 aS
-gM
+lV
 aS
 aS
 aR
-af
+fB
 aa
 aa
 aa
@@ -11664,9 +13962,9 @@ aH
 aH
 aH
 aH
-bD
-gN
-bD
+jJ
+lW
+jJ
 bx
 bx
 bx
@@ -11827,7 +14125,7 @@ jd
 cT
 cL
 aS
-aS
+lX
 aS
 bx
 dQ
@@ -11978,8 +14276,8 @@ aa
 aa
 aa
 aH
-aI
-aI
+eF
+eF
 aH
 cT
 js
@@ -11989,9 +14287,9 @@ cT
 cT
 aH
 aS
+lX
 aS
-aS
-bF
+cz
 dQ
 dQ
 dQ
@@ -12136,13 +14434,13 @@ aa
 aa
 aa
 cM
-cN
-cN
-cN
+af
+af
+af
 cM
 cT
 cT
-cL
+fh
 cT
 aH
 du
@@ -12151,21 +14449,21 @@ du
 du
 du
 in
+lX
 aS
-aS
-bF
+cz
 dQ
 dQ
 dQ
 dQ
 dQ
 dQ
+kH
 dQ
-dQ
-ei
+gq
 iE
 ek
-ei
+gq
 aa
 aa
 aa
@@ -12301,7 +14599,7 @@ cM
 fl
 fp
 fp
-fr
+cN
 dq
 aF
 aF
@@ -12311,24 +14609,24 @@ du
 dw
 dy
 dD
-dE
+gN
 aS
+lX
 aS
-aS
-bF
+cz
 dQ
 dQ
 dQ
 dQ
 dQ
 dQ
-dQ
+ns
 dQ
 bx
 ej
 ej
 el
-eo
+jE
 el
 aa
 aa
@@ -12456,10 +14754,10 @@ aa
 aa
 aa
 aa
-cN
+af
 iC
 fk
-cN
+af
 fm
 fk
 fk
@@ -12473,18 +14771,18 @@ du
 dx
 dy
 dD
-dE
-aS
-aS
-aS
+gN
+kk
+kX
+ks
 bJ
-dN
-dV
-dN
-dN
+eg
+eQ
+eg
+eg
 bJ
 hA
-dQ
+ns
 dQ
 ip
 dQ
@@ -12636,17 +14934,17 @@ iv
 dy
 iw
 du
-dT
 aS
+lX
 io
 bJ
 dR
+kx
 dR
 dR
-dR
-dN
+eg
 dY
-dQ
+ns
 dQ
 dQ
 dQ
@@ -12655,7 +14953,7 @@ el
 iW
 en
 en
-eo
+jE
 aa
 aa
 aa
@@ -12797,27 +15095,27 @@ du
 ha
 dy
 dy
-dF
-dX
+hH
 aS
-aS
-bL
-dR
-dR
-dR
-dR
-dN
-dY
-dQ
+kY
+mg
+mk
+mp
+lm
+mp
+mp
+ng
+nq
+nt
 dQ
 dQ
 dQ
 dQ
 el
-jo
+jm
 en
 en
-eo
+jE
 aa
 aa
 aa
@@ -12951,35 +15249,35 @@ fk
 fk
 cM
 gX
-bT
+fb
 dI
-dM
-dM
-dv
-dA
-dC
-dC
-dG
-hy
+jH
+kS
+lc
+lh
+ll
+lC
+lE
+lM
+kZ
 cw
-cw
-cj
+dV
 dS
+mG
 dW
 dW
-dW
-cj
-dZ
-ec
+dV
+gu
+mS
 dQ
 iy
 dQ
 el
 el
-jp
+jn
 en
 en
-eo
+jE
 aa
 aa
 aa
@@ -13115,30 +15413,30 @@ dd
 dc
 aF
 gZ
-dL
-dL
+kK
+kc
 du
 dy
-dy
-dy
+kT
+kj
 du
-aS
-aS
+dX
+lY
 aS
 bJ
 hz
+mH
 dR
 dR
-dR
-bL
+dN
 dQ
-dY
+kI
 dQ
 dP
 dP
 el
-jm
-jn
+iU
+iV
 ep
 el
 el
@@ -13283,23 +15581,23 @@ du
 dB
 dB
 dB
-dE
+gN
+dX
+lY
 aS
-aS
-aS
-dN
+eg
 dR
-dR
+ky
 ix
 dR
 bJ
 dP
-ed
+gg
 dP
 dP
-hg
-iU
-jn
+hC
+hZ
+iV
 el
 el
 el
@@ -13446,22 +15744,22 @@ du
 du
 du
 du
-in
-aS
-aS
-bJ
-bJ
-bJ
-bJ
-bJ
-bJ
-ea
-ee
-ef
+eE
+lY
 em
-hj
+bJ
+bJ
+bJ
+bJ
+bJ
+bJ
+gV
+gV
+hh
+dU
+hD
 el
-eo
+jE
 el
 aa
 aa
@@ -13608,18 +15906,18 @@ jc
 cQ
 cQ
 dm
-gL
-gL
-gL
+eI
+lZ
+jD
 dO
 dU
 dU
 je
 dU
 dU
-eb
+hb
 dU
-eg
+hi
 dP
 dP
 dP
@@ -13748,11 +16046,11 @@ aa
 aa
 aa
 aa
-cN
+af
 fm
 bM
 bM
-fb
+aL
 dd
 fg
 fg
@@ -13770,9 +16068,9 @@ aH
 aH
 aH
 aH
-aS
-aS
-aS
+kl
+kX
+ks
 dP
 dP
 dP
@@ -13917,9 +16215,9 @@ dr
 dJ
 dd
 fa
+ie
 fa
-fa
-fa
+eH
 ik
 dd
 ds
@@ -13931,16 +16229,16 @@ eq
 eq
 eq
 eq
-ew
+bF
+dX
+lY
 aS
-aS
-aS
-ay
+ei
 aP
 aP
 aP
 aP
-aP
+kB
 aP
 aP
 gx
@@ -14071,41 +16369,41 @@ aa
 aa
 aa
 aa
-cN
+af
 fk
 fm
 bM
-iZ
-fc
+bB
+aj
 dd
 is
+aV
 fa
+dv
 fa
-fa
-fa
-fh
+dn
 er
 et
 hV
 et
 et
-eq
-eq
-eq
-eq
-ex
-aS
-aS
-aS
-az
-aP
-aP
-aP
-aP
-aP
-aP
-aP
-gx
+ke
+kU
+hy
+hy
+lF
+lN
+la
+mg
+ml
+mq
+mq
+mq
+mq
+lp
+mq
+mq
+nv
 gz
 cx
 cx
@@ -14233,44 +16531,44 @@ aa
 aa
 aa
 aa
-cN
+af
 fk
 fm
 bM
 bM
-fb
+al
 dd
 fa
+aV
 fa
+dv
 fa
-fa
-fa
-fi
+do
 er
 eq
 et
 et
-eq
-eq
-eq
-hZ
-eq
-ew
-aS
+kU
+kN
+li
+ed
+bA
+bL
+fC
 ia
 aS
-aA
+ew
 aP
 ib
 aP
 bp
-bp
+kC
 aP
 aP
-if
+nw
 gz
-gD
-gD
+gG
+gG
 gz
 aa
 aa
@@ -14400,40 +16698,40 @@ fk
 fm
 dd
 fa
-fd
-ff
-fa
-fa
-fa
-fa
-fa
-fi
-er
-eq
-eq
-eq
-eq
-eq
-eq
+ap
+ax
+aA
+bz
+aA
+dZ
+aA
+fN
+he
+hy
+iR
+kM
+kV
+kf
+di
 bq
 bq
 bq
-cg
+cn
 bE
 cg
 bE
-cg
+cn
 bE
 aP
 bH
 bH
 gv
 aP
-gx
+nx
 gA
 gA
 gE
-gD
+gG
 aa
 aa
 aa
@@ -14556,7 +16854,7 @@ aa
 aa
 aa
 aa
-cN
+af
 fl
 fp
 fo
@@ -14569,11 +16867,11 @@ fa
 ij
 fa
 fa
-fh
+dn
 er
-eq
-eq
-eq
+ah
+if
+di
 an
 an
 an
@@ -14583,19 +16881,19 @@ aU
 aU
 bE
 aU
-aU
-aU
+kt
+mr
 bE
-cg
+cn
 bE
 bE
 bE
 hc
-he
+ny
 gA
 gE
 gA
-gD
+gG
 aa
 aa
 aa
@@ -14733,31 +17031,31 @@ dd
 dd
 dd
 gT
-eq
-ev
+ck
+hU
 an
 an
 aK
 iQ
 aK
 an
-aU
-aU
-iX
-aU
-aU
-aU
+lG
+lO
+ma
+lO
+lO
+ms
 ge
 gj
 aU
-aU
-cg
+nh
+cn
 aP
-gx
+nx
 gA
 gA
 gE
-gD
+gG
 aa
 aa
 aa
@@ -14880,7 +17178,7 @@ aa
 aa
 aa
 aa
-cN
+af
 hu
 fp
 fp
@@ -14890,36 +17188,36 @@ fp
 hw
 fk
 fk
-db
-cP
-bu
+aX
+dA
+ef
 bu
 gU
-bu
-eG
+cI
+hY
 an
 ao
 ao
-ao
+kQ
 ao
 an
-aU
+lH
 aU
 cm
 fT
-aU
-gf
-gk
-gk
-gf
-aU
-cg
-aP
-gx
+ku
+mt
+mP
+mP
+nb
+ni
+cn
+mT
+nm
 aP
 gA
 gA
-gD
+gG
 aa
 aa
 aa
@@ -15053,31 +17351,31 @@ cM
 cM
 cM
 cM
-er
-eq
-eq
-eq
-eq
-eH
+dC
+fj
+fd
+hf
+hJ
+iX
 an
 ae
 aN
-aN
-aN
-aT
-aV
+lj
+ln
+ly
+lI
 ch
 cp
 fU
 ch
-al
+mu
 gk
 gk
 gf
-aU
-cg
-aP
-gx
+nj
+cn
+mU
+nz
 aP
 ih
 gz
@@ -15203,28 +17501,28 @@ aa
 aa
 aa
 aa
-at
-at
-at
-cR
-cJ
-cJ
-cV
-cV
-dg
-hK
-cJ
-at
-fj
 ad
+ad
+ad
+cS
+cJ
+cJ
+cW
+cW
+dk
+bO
+cJ
+ad
+cc
 cB
+fO
 bm
 bm
 eS
 an
 ao
 ao
-iR
+kR
 ao
 an
 de
@@ -15232,18 +17530,18 @@ aU
 cm
 fT
 aU
-ga
+mv
 gl
 gl
 aU
 aU
-cg
+cn
 aP
-gx
+nx
 aP
 aP
 gH
-gD
+gG
 aa
 co
 gr
@@ -15365,21 +17663,21 @@ aa
 aa
 aa
 aa
-at
+ad
 aQ
-hK
+bO
 cJ
-cU
-cU
-cZ
-cZ
-cU
+cV
+cV
+dg
+dg
+cV
 cJ
 cJ
-at
+ad
 fq
-ak
-ak
+bd
+ga
 bm
 bs
 eT
@@ -15394,23 +17692,23 @@ aU
 cm
 fT
 iz
-ga
+mv
 aU
 aU
 aU
 aU
-cg
+cn
 aP
-gx
+nx
 aP
 aP
 gI
-gD
+gG
 aa
-gq
+jG
 gs
 iH
-gq
+jG
 aa
 co
 aa
@@ -15527,21 +17825,21 @@ aa
 aa
 aa
 aa
-av
+at
 bf
 cJ
-cS
-cV
-cV
-cV
-cV
-cV
-dg
+cU
+cW
+cW
+cW
+cW
+cW
+aT
 cJ
-at
+ad
 gS
-ak
-ak
+bd
+ga
 bm
 dp
 eW
@@ -15552,31 +17850,31 @@ ag
 ag
 ag
 bE
-cg
-cg
-cg
+cn
+cn
+cn
 bE
+mw
 gb
-gg
 bE
-cg
-cg
-cg
-bI
-bI
 cn
 cn
+bE
+gh
+nA
+gD
 co
 co
-cz
+co
+jF
 co
 gr
 gr
 co
-cz
+jF
 co
-cz
-cz
+jF
+jF
 co
 aa
 aa
@@ -15689,21 +17987,21 @@ aa
 aa
 aa
 aa
-av
+at
 bi
 cJ
-cS
-cV
-cV
-cV
-cV
-cV
-dg
-cJ
-dn
-ak
-ak
-ak
+cU
+cW
+cW
+cW
+cW
+cW
+aO
+aW
+ca
+ee
+ev
+iO
 bm
 bt
 eV
@@ -15715,21 +18013,21 @@ ag
 ag
 ac
 ac
+kp
 ac
 ac
-di
-ah
-ac
-ic
-ac
-ac
-ac
-ac
-bK
-ac
+mx
 ac
 ic
 ac
+kp
+jO
+ac
+nB
+hB
+jQ
+ig
+jg
 ac
 ac
 ac
@@ -15851,21 +18149,21 @@ aa
 aa
 aa
 aa
-at
-jl
+ad
+bD
 cJ
-cS
-cV
-iq
-at
-ir
-cV
-dg
-dk
-do
-ak
-ak
-hU
+cU
+cW
+cY
+ad
+dj
+cW
+by
+hL
+jl
+jX
+jY
+gd
 bm
 bv
 eU
@@ -15877,23 +18175,23 @@ ag
 ag
 ac
 ac
-ac
-ac
-ac
-aj
-ac
-ac
-ac
-ac
-ac
-ac
-bK
-ac
-ac
-ac
-gP
-gp
-gP
+mb
+mh
+mh
+lg
+mh
+mh
+mh
+lq
+nr
+nu
+lv
+nk
+nI
+nJ
+nK
+nL
+nM
 gp
 gP
 gp
@@ -16013,21 +18311,21 @@ aa
 aa
 aa
 aa
-av
+at
 aQ
 cJ
-cS
-cV
-cV
-cV
-cV
-cV
-dg
+cU
+cW
+cW
+cW
+cW
+cW
+by
 cJ
-dn
+ir
 ak
-ak
-ak
+bd
+ga
 bm
 bR
 ju
@@ -16039,23 +18337,23 @@ ag
 ag
 ac
 ac
+kq
 ac
 ac
-ac
-aj
-ac
-id
-ac
-ac
-ac
-ac
-bK
-ac
+mx
 ac
 id
 ac
+kq
+jO
+kJ
+nC
+kq
+jO
+id
+kJ
 ac
-ac
+kq
 ac
 ac
 id
@@ -16175,21 +18473,21 @@ aa
 aa
 aa
 aa
-av
+at
 bf
 cJ
-cS
-cV
-cV
-cV
-cV
-cV
-dg
+cU
+cW
+cW
+cW
+cW
+cW
+cA
 cJ
-at
+ad
 ak
-ak
-ak
+bd
+ga
 bm
 bW
 eX
@@ -16200,31 +18498,31 @@ ag
 ag
 ag
 bP
-cf
-cf
-cf
+cj
+cj
+cj
 bP
+my
 gc
-gh
 bP
-cf
-cf
-cf
-bI
-bI
-cn
-cn
+cj
+cj
+bP
+gh
+nA
+gD
 co
 co
-cz
+co
+jF
 co
 gr
 gr
 co
-cz
+jF
 co
-cz
-cz
+jF
+jF
 co
 aa
 aa
@@ -16337,21 +18635,21 @@ aa
 aa
 aa
 aa
-at
+ad
 bi
-hL
+cR
 cJ
-cW
 cX
-da
-da
+cZ
 dh
-dj
+dh
 gW
-at
+hK
+iq
+ad
 ak
-ak
-ak
+bd
+ga
 bm
 eR
 hW
@@ -16366,23 +18664,23 @@ ci
 cq
 fV
 iA
-gd
+mA
 fX
 fX
 fX
 fX
-cf
+cj
 bh
-gy
+nD
 bh
 bh
 gJ
-gG
+hg
 aa
-gq
+jG
 gs
 iH
-gq
+jG
 aa
 co
 aa
@@ -16499,21 +18797,21 @@ aa
 aa
 aa
 aa
-at
-at
-at
+ad
+ad
+ad
+cS
+cJ
+da
+cW
+cW
+dk
 cR
 cJ
-cY
-cV
-cV
-dg
-hL
-cJ
-at
 ad
-ad
+cs
 cB
+fO
 bm
 bm
 iN
@@ -16522,24 +18820,24 @@ eL
 eL
 iB
 eM
-cc
+ay
 df
 ce
 cq
 fV
 fX
-gd
+mA
 gm
 gm
 fX
 fX
-cf
-bh
-gy
+cj
+mV
+nn
 bh
 bh
 gK
-gG
+hg
 aa
 co
 gr
@@ -16673,31 +18971,31 @@ aw
 aw
 aw
 aw
-ey
-ey
-ey
-ey
-ey
-iO
-cc
+dG
+fD
+fZ
+hj
+hj
+iY
+ay
 eM
+kg
+ki
 eM
-eM
-eM
-cc
+ay
 cb
 ce
 cq
 fV
-fX
-cA
+kv
+mz
 gn
 gn
 gi
-fX
-cf
-bh
-gy
+nl
+cj
+mW
+nE
 bh
 ii
 gC
@@ -16824,7 +19122,7 @@ aa
 aa
 aa
 aa
-aX
+au
 bX
 fv
 fv
@@ -16835,35 +19133,35 @@ hx
 fv
 fv
 fA
+dM
+eG
 ez
 ez
 ez
-gV
-ez
-jv
-eJ
+iZ
+fi
 eN
-ap
+ld
+lw
 eN
-eN
-eP
+az
 cd
 cl
 cr
 fW
 fY
-fZ
-gn
-gn
-gi
-fX
-cf
+mD
+mQ
+mQ
+nc
+no
+cj
 bh
-gy
+nF
 bh
 gB
 gB
-gG
+hg
 aa
 aa
 aa
@@ -16987,7 +19285,7 @@ aa
 aa
 aa
 aw
-hn
+av
 aw
 aw
 aw
@@ -17000,32 +19298,32 @@ aw
 aG
 aG
 aG
-hb
+bQ
 ey
-iO
+jj
 eK
 eM
-aW
-eM
-eM
-eQ
-ce
-ce
-iY
-fV
-fX
-fX
+le
+lk
+lr
+lz
+lJ
+lJ
+mc
+mj
+mn
+mE
 hQ
 go
 fX
-fX
-cf
+np
+cj
 bh
-gy
+nF
 gB
 gB
 gF
-gG
+hg
 aa
 aa
 aa
@@ -17148,7 +19446,7 @@ aa
 aa
 aa
 aa
-aX
+au
 bS
 ho
 ba
@@ -17161,10 +19459,10 @@ aJ
 aJ
 aJ
 aJ
-eD
+dE
+bU
 ey
-ey
-hX
+jx
 bG
 bG
 bZ
@@ -17175,19 +19473,19 @@ ce
 ce
 bP
 fX
-fX
-fX
+kw
+mB
 bP
 cf
 bP
 bP
 bP
 hd
-hf
+nG
 gB
 gF
 gB
-gG
+hg
 aa
 aa
 aa
@@ -17319,37 +19617,37 @@ ft
 bb
 aw
 aJ
-aM
-ck
-ck
-ck
-eE
-ez
-ez
-eI
+bI
+bY
+bY
+bY
+dF
+bU
+ey
+jL
 ey
 bG
-eO
-eO
+fr
+fr
 bG
 bG
-cf
-cf
+cj
+cj
 bP
-cf
-cf
-cf
+cj
+cj
+cj
 bP
 bh
 gt
 gt
 gw
 bh
-gy
+nF
 gB
 gB
 gF
-gG
+hg
 aa
 aa
 aa
@@ -17473,7 +19771,7 @@ aa
 aa
 aa
 aa
-aX
+au
 hp
 bc
 ft
@@ -17481,36 +19779,36 @@ ft
 fx
 aw
 aJ
-bU
-bY
-bY
-bY
-eF
-ey
-ey
-hB
-ez
-ez
-ez
-ez
-hC
-hD
-hD
-hD
-hE
-gO
-gO
-gO
-bd
-bh
-gu
-gu
-bh
-bh
-ig
+bK
+dT
+eo
+eo
+gL
+hk
+hS
+jM
+hS
+kW
+lf
+hS
+lu
+lA
+lK
+lS
+mf
+lA
+lA
+mF
+mR
+mZ
+nd
+mN
+mZ
+mZ
+nH
 gC
-gG
-gG
+hg
+hg
 gC
 aa
 aa
@@ -17635,7 +19933,7 @@ aa
 aa
 aa
 aa
-aX
+au
 bS
 hq
 fu
@@ -17643,30 +19941,30 @@ fx
 iK
 aw
 aJ
-bU
+bY
+ct
 bY
 bY
-bY
-eD
+dE
 ey
 ey
-hY
+jo
+jp
+kd
+kh
 ey
-ey
-ey
-ey
-ax
+aE
+gO
+kr
+km
+md
 gO
 gO
-gO
-gO
-gO
-gO
-gO
-be
+md
+jB
 bh
-bh
-bh
+lo
+ls
 bh
 bh
 gy
@@ -17805,30 +20103,30 @@ ba
 fy
 aw
 aG
-hm
-bY
+as
+cE
 hN
 aG
 aG
 bj
 br
 br
-ey
-ey
-ey
-ey
-as
-gO
-gO
-gO
-gO
+jv
+ez
+ez
+ez
+be
+jz
+jz
+jA
+md
 hP
 gO
-gO
-bg
+md
+jy
 bh
 bh
-ie
+lt
 bh
 bh
 gy
@@ -17960,7 +20258,7 @@ aa
 aa
 aa
 aa
-aX
+au
 aY
 ba
 aY
@@ -17968,7 +20266,7 @@ fy
 aw
 aJ
 bY
-bY
+cG
 bY
 eA
 aG
@@ -17980,20 +20278,20 @@ br
 bC
 br
 br
-aE
-aq
-ct
-ar
-ai
-aO
-aO
-ai
-fE
-fE
-fE
-fE
-fE
+bo
+bN
 fH
+me
+ai
+eD
+kL
+ai
+fE
+fE
+fE
+fE
+fE
+jC
 fE
 cx
 cx
@@ -18130,7 +20428,7 @@ fy
 aw
 aJ
 bY
-bY
+cG
 bY
 eB
 aG
@@ -18141,14 +20439,14 @@ iP
 bk
 bk
 bk
-bN
+bg
 am
 ar
-ar
-ar
-bo
-ar
-ar
+kn
+eP
+eO
+jV
+mI
 bn
 cH
 cH
@@ -18291,8 +20589,8 @@ ht
 aY
 aw
 aJ
-bY
-bY
+jT
+cP
 bY
 eC
 aG
@@ -18306,11 +20604,11 @@ ai
 ai
 hR
 ar
-ar
-ar
-bo
-ar
-hT
+ko
+fc
+eO
+jW
+mC
 ai
 ai
 ai
@@ -18321,7 +20619,7 @@ fI
 cH
 cH
 fE
-fN
+jP
 fE
 aa
 aa
@@ -18450,29 +20748,29 @@ aa
 aw
 aw
 aw
-aZ
+aM
 aw
 aw
 bY
-bY
+cu
 bY
 bY
 aG
 hG
 ai
+kz
 ar
+ai
+kz
 ar
 ai
 ar
 ar
-ai
+eb
 ar
+eO
 ar
-ar
-ar
-bo
-ar
-ar
+mJ
 ai
 fF
 ar
@@ -18616,29 +20914,29 @@ aY
 aY
 aw
 aw
-aq
-aq
+jU
+bN
 aB
 ai
 iM
 ai
-ar
+jS
 ji
 ai
-ar
+jS
 ji
 ai
-bo
-bo
-cu
-bo
+eO
+eO
+fM
+eO
 ai
-aO
-aO
+eD
+kL
 ai
 hR
-ar
-ar
+kz
+kF
 hT
 ai
 fI
@@ -18778,40 +21076,40 @@ aw
 aY
 iL
 aw
-ar
+eb
 ar
 ar
 ai
 hG
 ai
-ar
-ar
+kD
+ka
+ai
+kD
+ka
 ai
 ar
 ar
-ai
-ar
-ar
-ar
+eb
 ar
 il
 ar
+mK
+mX
+na
+ne
+ea
 ar
-aO
-ar
-ar
-ar
-ar
-bn
+jN
 fJ
 fL
-fO
+hE
 cH
 cH
 cH
 cH
 cH
-fN
+jP
 aa
 aa
 aa
@@ -18939,41 +21237,41 @@ aa
 aw
 aY
 aY
-aZ
-ar
+aM
+eb
 ar
 hT
 ai
-hH
+eJ
 ai
-aO
-bo
+kL
+eO
 ai
-aO
-bo
+kL
+eO
 ai
 ar
 ar
+eb
 ar
 ar
 ar
-ar
-cG
+mL
 ai
-bo
-bo
-bo
-bo
+eO
+eO
+eO
+eO
 ai
 fE
 fE
-iV
+fI
 cH
 cH
 cH
 cH
 cH
-fN
+jP
 aa
 aa
 aa
@@ -19102,40 +21400,40 @@ aw
 fz
 fz
 aw
-hJ
+ec
+ex
+fK
+gM
+hm
+fK
+kE
+kO
+lb
+kP
+fK
+lx
+lB
 aC
-aC
-aL
 hI
 aC
 aC
-by
-jj
-aC
-aC
-bO
-aC
-aC
-aC
-aC
-aC
 cF
-hk
-bo
+mM
+eO
 fG
-fG
-fG
+kA
+kG
 fG
 ai
-fC
-fM
-hh
+cH
+jR
+fI
 cH
 cH
 cH
 jh
 cH
-fN
+jP
 aa
 aa
 aa
@@ -19260,38 +21558,38 @@ aa
 aa
 aa
 aa
-aX
+au
 iD
 aY
 aw
+jV
+eP
+ar
+eD
+ar
+ar
+jZ
+kb
 ar
 ar
 ar
-aO
-ar
-ar
-ar
-bz
-ar
-ar
-ar
-aO
-ar
-ar
-ar
-ar
-ar
-bB
-aC
-fB
-aC
-aC
-hS
+eD
+lD
+lL
+lP
+lL
+lL
+mo
+kE
+mY
+fK
+nf
+mO
 hl
 ai
-fK
+cH
 fE
-hi
+hX
 cH
 cH
 cH
@@ -19426,37 +21724,37 @@ aw
 fz
 fz
 aw
-ar
-ar
+jW
+fc
 ar
 ai
-bo
-bo
-bo
-bA
-aO
-bo
-bo
+eO
+eO
+eO
+eD
+eD
+eO
+eO
 ai
 ar
 ar
-ar
+lQ
 hO
 ar
-ar
-ar
+kb
+jZ
 ai
 ai
-bn
+jN
 ai
 ai
 ai
-fK
+cH
 fE
 fQ
 fQ
 fE
-fN
+jP
 fE
 aa
 aa
@@ -19588,36 +21886,36 @@ aa
 aa
 aa
 ai
-au
-au
-au
+bT
+bT
+bT
 ai
 ar
 ar
 hO
-bz
 ar
 ar
 ar
+ar
 ai
 ai
 ai
-cv
+lR
 ai
-cv
+jK
 ai
 ai
 ai
 iS
 cH
 cH
-fC
-cI
-fD
-fN
+cH
+cH
+cH
+jP
 iF
 cH
-fN
+jP
 aa
 aa
 aa
@@ -19754,26 +22052,26 @@ aa
 aa
 aa
 ai
-au
-au
-ai
-bB
-aC
-aC
-hS
-bQ
-am
+bT
+bT
 ai
 ar
+ar
+ar
+ar
+ar
+am
+ai
+lQ
 ar
 ar
 ai
 cH
-fC
-cI
-cI
-cI
-jg
+cH
+cH
+cH
+cH
+jh
 fE
 fE
 fE
@@ -19919,19 +22217,19 @@ aa
 aa
 aa
 ai
-au
-au
-au
+bT
+bT
+bT
 ai
-bB
-ca
-cs
-aC
-aC
-aC
-cs
-cI
-fD
+ar
+am
+jI
+lQ
+ar
+ar
+jI
+cH
+cH
 fE
 fE
 fE
@@ -20088,8 +22386,8 @@ ai
 ai
 ai
 ai
-cv
-bo
+lR
+eO
 cv
 ai
 ai
@@ -20247,15 +22545,15 @@ aa
 aa
 cC
 cC
-au
+bT
 bV
 ar
-ar
-cE
-ar
+lT
+mi
+mm
 ar
 bV
-au
+bT
 aa
 aa
 aa
@@ -20409,15 +22707,15 @@ aa
 aa
 cC
 cC
-au
+bT
 aq
 hO
+jZ
 ar
-ar
-ar
+kb
 hO
 aq
-au
+bT
 aa
 aa
 aa
@@ -20736,9 +23034,9 @@ aa
 aa
 aa
 ai
-au
-au
-au
+bT
+bT
+bT
 ai
 aa
 aa
